@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.alpharogroup</groupId>
+		<artifactId>mvn-java-api-parent</artifactId>
+		<version>1</version>
+		<relativePath></relativePath>
+	</parent>
+
+	<artifactId>ent-api</artifactId>
+	<version>1-SNAPSHOT</version>
+	<inceptionYear>2018</inceptionYear>
+
+	<name>${project.artifactId}</name>
+
+	<description>Parent project that holds module projects for base interfaces and classes for persistence </description>
+
+	<url>https://github.com/lightblueseas/${project.artifactId}</url>
+
+	<properties>
+	</properties>
+
+	<scm>
+		<connection>scm:git:git:@github.com:lightblueseas/${project.artifactId}.git</connection>
+		<developerConnection>scm:git:git@github.com:lightblueseas/${project.artifactId}.git</developerConnection>
+		<url>git:@github.com:lightblueseas/${project.artifactId}.git</url>
+	</scm>
+
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/lightblueseas/${project.artifactId}/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>travis-ci</system>
+		<url>https://travis-ci.org/lightblueseas/${project.artifactId}</url>
+	</ciManagement>
+
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<inherited>true</inherited>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
+</project>
