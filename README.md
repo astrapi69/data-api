@@ -3,7 +3,6 @@
 <div align="center">
 
 [![Build Status](https://travis-ci.org/astrapi69/ent-api.svg?branch=master)](https://travis-ci.org/astrapi69/ent-api) 
-[![Coverage Status](https://coveralls.io/repos/github/astrapi69/ent-api/badge.svg?branch=master)](https://coveralls.io/github/astrapi69/ent-api?branch=master) 
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/ent-api.svg?style=flat)](https://github.com/astrapi69/ent-api/issues) 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/ent-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/ent-api)
 [![Javadocs](http://www.javadoc.io/badge/de.alpharogroup/ent-api.svg)](http://www.javadoc.io/doc/de.alpharogroup/ent-api)
@@ -98,7 +97,6 @@ or over flattr:
 |Many thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects.|
 |![sonatype repository](https://avatars1.githubusercontent.com/u/33330803?s=200&v=4)|
 |Many thanks to [sonatype repository](https://oss.sonatype.org) for providing a free maven repository service for open source projects.|
-|![Coverage Status](https://coveralls.io/repos/github/astrapi69/mystic-crypt/badge.svg)|
 |Many thanks to [coveralls.io](https://coveralls.io) for providing a free code coverage for open source projects.|
 |[![Javadoc](https://javadoc-emblem.rhcloud.com/doc/de.alpharogroup/ent-api/badge.svg)](http://www.javadoc.io/doc/de.alpharogroup/ent-api) ent-api |
 |Many thanks to [javadoc.io](http://www.javadoc.io) for providing a free javadoc documentation for open source projects.|
