@@ -25,14 +25,13 @@
 package de.alpharogroup.db.entity.delete;
 
 /**
- * The interface {@link Truncatable} can be implemented from an entity that needs to truncate the
- * data of the underlying data source
+ * The interface {@link Truncatable} can be implemented from an entity that needs
+ * to truncate the data of the underlying datasource
  */
-public interface Truncatable
-{
+public interface Truncatable {
 
-	/**
-	 * Truncate the underlying table
-	 */
-	void truncate();
+    /**
+     * Truncate the underlying table
+     */
+    void truncate();
 }
