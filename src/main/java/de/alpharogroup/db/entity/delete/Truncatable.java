@@ -29,7 +29,7 @@ package de.alpharogroup.db.entity.delete;
  * to truncate the data of the underlying datasource
  */
 public interface Truncatable {
-    
+
     /**
      * Truncate the underlying table
      */
