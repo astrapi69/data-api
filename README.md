@@ -96,7 +96,7 @@ Do not hesitate to contact the ent-api developers with your questions, concerns,
 
 |**Travis CI**|
 |     :---:      |
-|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/ent-api?branch=develop)|
+|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/ent-api?branch=master)|
 |Special thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects|
 |     <img width=1000/>     |
 
