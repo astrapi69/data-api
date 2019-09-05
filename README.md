@@ -81,7 +81,7 @@ ext {
 }
 dependencies {
 			...
-compile group: 'de.alpharogroup', name: 'ent-api', version: '${entApiVersion}'
+	compile 'de.alpharogroup:ent-api:${entApiVersion}'
 			...
 }
 ```
