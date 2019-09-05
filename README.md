@@ -49,10 +49,11 @@ Add the following maven dependency to your project `pom.xml` if you want to impo
 
 Than you can add the dependency to your dependencies:
 
+
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.1</ent-api.version>
+		<ent-api.version>1.2</ent-api.version>
 			...
 	</properties>
 			...
@@ -66,6 +67,24 @@ Than you can add the dependency to your dependencies:
 			</dependency>
 			...
 		</dependencies>
+
+	
+## gradle dependency
+
+Add the following gradle dependency to your project `build.gradle` in the dependencies section if you want to import the core functionality of ent-api:
+
+```
+ext {
+			...
+    entApiVersion = '1.2'
+			...
+}
+dependencies {
+			...
+compile group: 'de.alpharogroup', name: 'ent-api', version: '${entApiVersion}'
+			...
+}
+```
 
 ## Semantic Versioning
 
