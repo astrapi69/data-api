@@ -17,7 +17,7 @@ repositories {
 
 group = 'de.alpharogroup'
 archivesBaseName = 'ent-api'
-version = '1.2.1'
+version = '1.3-SNAPSHOT'
 description = 'ent-api'
 sourceCompatibility = '1.8'
 
