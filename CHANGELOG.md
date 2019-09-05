@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 1.2.1
+-------------
+
+ADDED:
+ 
+- new configuration uploadArchives in build.gradle for upload maven artifacts to maven repository
+
 Version 1.2
 -------------
 

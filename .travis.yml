@@ -1,7 +1,8 @@
 # ent-api .travis.yml
 
 language: java
-
+before_install:
+    - chmod +x gradlew
 jdk:
     - openjdk8
 
@@ -10,6 +11,4 @@ notifications:
         recipients:
             - asterios.raptis@web.de
         on_failure: always
-        
-after_success:
-  - mvn clean cobertura:cobertura org.eluder.coveralls:coveralls-maven-plugin:report
+
