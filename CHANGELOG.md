@@ -1,6 +1,14 @@
 ## Change log
 ----------------------
 
+Version 1.2
+-------------
+
+ADDED:
+ 
+- gradle as build system
+- new interfaces for store a variable length of text values
+
 Version 1.1
 -------------
 

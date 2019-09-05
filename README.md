@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Build Status](https://travis-ci.org/astrapi69/ent-api.svg?branch=master)](https://travis-ci.org/astrapi69/ent-api) 
+[![Build Status](https://travis-ci.org/astrapi69/ent-api.svg?branch=develop)](https://travis-ci.org/astrapi69/ent-api) 
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/ent-api.svg?style=flat)](https://github.com/astrapi69/ent-api/issues) 
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/ent-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/ent-api)
 [![Javadocs](http://www.javadoc.io/badge/de.alpharogroup/ent-api.svg)](http://www.javadoc.io/doc/de.alpharogroup/ent-api)
@@ -49,10 +49,11 @@ Add the following maven dependency to your project `pom.xml` if you want to impo
 
 Than you can add the dependency to your dependencies:
 
+
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.1</ent-api.version>
+		<ent-api.version>1.2</ent-api.version>
 			...
 	</properties>
 			...
@@ -66,6 +67,24 @@ Than you can add the dependency to your dependencies:
 			</dependency>
 			...
 		</dependencies>
+
+	
+## gradle dependency
+
+Add the following gradle dependency to your project `build.gradle` in the dependencies section if you want to import the core functionality of ent-api:
+
+```
+ext {
+			...
+    entApiVersion = '1.2'
+			...
+}
+dependencies {
+			...
+compile group: 'de.alpharogroup', name: 'ent-api', version: '${entApiVersion}'
+			...
+}
+```
 
 ## Semantic Versioning
 
@@ -96,7 +115,7 @@ Do not hesitate to contact the ent-api developers with your questions, concerns,
 
 |**Travis CI**|
 |     :---:      |
-|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/ent-api?branch=master)|
+|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/ent-api?branch=develop)|
 |Special thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects|
 |     <img width=1000/>     |
 
