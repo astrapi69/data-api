@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 1.3
+Version 1.3.1
 -------------
 
 ADDED:
