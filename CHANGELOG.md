@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 1.3.1
+-------------
+
+ADDED:
+ 
+- new interface Treeable that provides keeping data with in a tree structure
+
 Version 1.2.1
 -------------
 

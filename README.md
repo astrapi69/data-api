@@ -53,7 +53,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.2.1</ent-api.version>
+		<ent-api.version>1.3.1</ent-api.version>
 			...
 	</properties>
 			...
@@ -81,7 +81,7 @@ ext {
 }
 dependencies {
 			...
-compile group: 'de.alpharogroup', name: 'ent-api', version: '${entApiVersion}'
+	compile 'de.alpharogroup:ent-api:${entApiVersion}'
 			...
 }
 ```
