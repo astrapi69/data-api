@@ -4,6 +4,10 @@
 Version 1.3-SNAPSHOT
 -------------
 
+ADDED:
+ 
+- new interface Treeable that provides keeping data with in a tree structure
+
 Version 1.2.1
 -------------
 

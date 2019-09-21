@@ -10,6 +10,8 @@ plugins {
     id 'signing'
 }
 
+apply plugin: 'maven'
+
 repositories {
     mavenLocal()
     mavenCentral()
