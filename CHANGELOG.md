@@ -4,6 +4,10 @@
 Version 1.4-SNAPSHOT
 -------------
 
+ADDED:
+ 
+- new enum class DatabasePrefix from ent-core to this project
+
 Version 1.3.1
 -------------
 
