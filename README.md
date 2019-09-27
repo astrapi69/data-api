@@ -76,7 +76,7 @@ Add the following gradle dependency to your project `build.gradle` in the depend
 ```
 ext {
 			...
-    entApiVersion = '1.2.1'
+    entApiVersion = '1.4'
 			...
 }
 dependencies {
