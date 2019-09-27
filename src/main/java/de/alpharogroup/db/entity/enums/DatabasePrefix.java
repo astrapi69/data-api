@@ -41,7 +41,7 @@ public enum DatabasePrefix
 	/** The underscore for concat prefixes with names */
 	UNDERSCORE("_"),
 	/** The prefix for the unique constraint name */
-	UNIQUE_CONSTRAINT_NAME("uk_");
+	UNIQUE_CONSTRAINT_NAME("uc_");
 
 	/** The prefix. */
 	private final String prefix;
