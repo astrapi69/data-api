@@ -24,18 +24,10 @@
  */
 package de.alpharogroup.db.entity.enums;
 
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.experimental.FieldDefaults;
-
 /**
  * The enum {@link DatabasePrefix} holds some useful prefixes for sequences, sequence generators,
  * unique constraints, foreign keys and indexes names
  */
-@Getter
-@AllArgsConstructor(access = AccessLevel.PRIVATE)
-@FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public enum DatabasePrefix
 {
 	/** The prefix for the foreign key name */
@@ -52,5 +44,19 @@ public enum DatabasePrefix
 	UNIQUE_CONSTRAINT_NAME("uk_");
 
 	/** The prefix. */
-	String prefix;
+	private final String prefix;
+
+	private DatabasePrefix(final String prefix){
+		this.prefix = prefix;
+	}
+
+	/**
+	 * Gets the specific prefix
+	 *
+	 * @return the specific prefix
+	 */
+	public String getPrefix()
+	{
+		return prefix;
+	}
 }
