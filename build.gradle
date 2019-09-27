@@ -144,10 +144,10 @@ nexusStaging {
     packageGroup = "de.alpharogroup" //optional if packageGroup == project.getGroup()
 }
 
-signing {
-    sign publishing.publications.mavenJava
-    // sign configurations.archives
-}
+//signing {
+//     sign publishing.publications.mavenJava
+//     sign configurations.archives
+//}
 
 javadoc {
     if (JavaVersion.current().isJava9Compatible()) {
