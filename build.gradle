@@ -33,7 +33,7 @@ repositories {
 
 group = 'de.alpharogroup'
 archivesBaseName = 'ent-api'
-version = '1.4-SNAPSHOT'
+version = '1.4'
 description = 'ent-api'
 sourceCompatibility = '1.8'
 
