@@ -3,3 +3,6 @@
  */
 
 rootProject.name = 'ent-api'
+
+ossrhUsername = ''
+ossrhPassword = ''
