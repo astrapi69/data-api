@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 1.4
+-------------
+
+ADDED:
+ 
+- new enum class DatabasePrefix from ent-core to this project
+
 Version 1.3.1
 -------------
 

@@ -56,6 +56,7 @@
 ################
 # gradle files #
 ################
+/gradle.properties
 /build
 /.gradle
 /gradle

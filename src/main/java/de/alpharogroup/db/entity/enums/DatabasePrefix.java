@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2018 Asterios Raptis
+ * Copyright (C) 2015 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -22,17 +22,41 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.delete;
+package de.alpharogroup.db.entity.enums;
 
 /**
- * The interface {@link Truncatable} can be implemented from an entity that needs to truncate the
- * data of the underlying datasource
+ * The enum {@link DatabasePrefix} holds some useful prefixes for sequences, sequence generators,
+ * unique constraints, foreign keys and indexes names
  */
-public interface Truncatable
+public enum DatabasePrefix
 {
+	/** The prefix for the foreign key name */
+	FOREIGN_KEY_NAME("fk_"),
+	/** The prefix for the index */
+	INDEX_NAME("idx_"),
+	/** The prefix for the sequence generator name */
+	SEQUENCE_GENERATOR_NAME("seq_gen_"),
+	/** The prefix for the sequence name */
+	SEQUENCE_NAME("seq_"),
+	/** The underscore for concat prefixes with names */
+	UNDERSCORE("_"),
+	/** The prefix for the unique constraint name */
+	UNIQUE_CONSTRAINT_NAME("uk_");
+
+	/** The prefix. */
+	private final String prefix;
+
+	private DatabasePrefix(final String prefix){
+		this.prefix = prefix;
+	}
 
 	/**
-	 * Truncate the underlying table
+	 * Gets the specific prefix
+	 *
+	 * @return the specific prefix
 	 */
-	void truncate();
+	public String getPrefix()
+	{
+		return prefix;
+	}
 }

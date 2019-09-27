@@ -41,6 +41,20 @@ public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 {
 
 	/**
+	 * Gets the depth of the node
+	 *
+	 * @return the depth of the node
+	 */
+	int getDepth();
+
+	/**
+	 * Gets the parent
+	 *
+	 * @return the parent
+	 */
+	TR getParent();
+
+	/**
 	 * Gets the value.
 	 *
 	 * @return the value
@@ -55,33 +69,12 @@ public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 	boolean isNode();
 
 	/**
-	 * Gets the parent
-	 *
-	 * @return the parent
-	 */
-	TR getParent();
-
-	/**
-	 * Gets the depth of the node
-	 *
-	 * @return the depth of the node
-	 */
-	int getDepth();
-
-	/**
 	 * Sets the new depth of the node
 	 *
-	 * @param depth the new depth
+	 * @param depth
+	 *            the new depth
 	 */
 	void setDepth(int depth);
-
-	/**
-	 * Sets the value
-	 *
-	 * @param value
-	 *            the new value
-	 */
-	void setValue(T value);
 
 	/**
 	 * Sets the node flag
@@ -98,5 +91,13 @@ public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 	 *            the new parent
 	 */
 	void setParent(TR parent);
+
+	/**
+	 * Sets the value
+	 *
+	 * @param value
+	 *            the new value
+	 */
+	void setValue(T value);
 
 }
