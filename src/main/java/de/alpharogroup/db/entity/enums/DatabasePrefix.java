@@ -25,28 +25,59 @@
 package de.alpharogroup.db.entity.enums;
 
 /**
- * The enum {@link DatabasePrefix} holds some useful prefixes for sequences, sequence generators,
- * unique constraints, foreign keys and indexes names
+ * The enum {@link DatabasePrefix} holds prefixes for sequences, sequence generators, unique
+ * constraints, foreign keys and index names
  */
 public enum DatabasePrefix
 {
 	/** The prefix for the foreign key name */
-	FOREIGN_KEY_NAME("fk_"),
+	FOREIGN_KEY_NAME(DatabasePrefix.FOREIGN_KEY_PREFIX),
 	/** The prefix for the index */
-	INDEX_NAME("idx_"),
+	INDEX_NAME(DatabasePrefix.INDEX_PREFIX),
 	/** The prefix for the sequence generator name */
-	SEQUENCE_GENERATOR_NAME("seq_gen_"),
+	SEQUENCE_GENERATOR_NAME(DatabasePrefix.SEQUENCE_GENERATOR_PREFIX),
 	/** The prefix for the sequence name */
-	SEQUENCE_NAME("seq_"),
+	SEQUENCE_NAME(DatabasePrefix.SEQUENCE_PREFIX),
 	/** The underscore for concat prefixes with names */
-	UNDERSCORE("_"),
+	UNDERSCORE(DatabasePrefix.UNDERSCORE_PREFIX),
 	/** The prefix for the unique constraint name */
-	UNIQUE_CONSTRAINT_NAME("uc_");
+	UNIQUE_CONSTRAINT_NAME(DatabasePrefix.UNIQUE_CONSTRAINT_PREFIX);
+
+	/**
+	 * The constant for the foreign key prefix
+	 **/
+	public static final String FOREIGN_KEY_PREFIX = "fk_";
+
+	/**
+	 * The constant for the index prefix
+	 **/
+	public static final String INDEX_PREFIX = "idx_";
+
+	/**
+	 * The constant for the sequence generator prefix
+	 **/
+	public static final String SEQUENCE_GENERATOR_PREFIX = "seq_gen_";
+
+	/**
+	 * The constant for the sequence prefix
+	 **/
+	public static final String SEQUENCE_PREFIX = "seq_";
+
+	/**
+	 * The constant for the underscore
+	 **/
+	public static final String UNDERSCORE_PREFIX = "_";
+
+	/**
+	 * The constant for the unique constraint prefix
+	 **/
+	public static final String UNIQUE_CONSTRAINT_PREFIX = "uc_";
 
 	/** The prefix. */
 	private final String prefix;
 
-	private DatabasePrefix(final String prefix){
+	private DatabasePrefix(final String prefix)
+	{
 		this.prefix = prefix;
 	}
 

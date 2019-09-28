@@ -1,8 +1,12 @@
 ## Change log
 ----------------------
 
-Version 1.5-SNAPSHOT
+Version 1.4.1
 -------------
+
+ADDED:
+ 
+- new constants for the prefixes in enum DatabasePrefix
 
 Version 1.4
 -------------
