@@ -79,11 +79,6 @@ public enum DatabasePrefix
 	 * The constant for the unique constraint prefix
 	 **/
 	public static final String UNIQUE_CONSTRAINT_PREFIX = "uc_";
-	
-	/**
-	 * The constant for the unique constraint for postgres prefix
-	 **/
-	public static final String UNIQUE_CONSTRAINT_PG_PREFIX = "uk_";
 
 	/** The prefix. */
 	private final String prefix;
