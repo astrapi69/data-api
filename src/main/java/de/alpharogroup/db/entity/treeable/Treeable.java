@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2015 Asterios Raptis
+ * Copyright (C) 2018 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -39,6 +39,18 @@ import java.io.Serializable;
 @SuppressWarnings("rawtypes")
 public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 {
+
+	/** The Constant for the column name 'depth'. */
+	String COLUMN_NAME_DEPTH = "depth";
+
+	/** The Constant for the column name 'node'. */
+	String COLUMN_NAME_NODE = "node";
+
+	/** The Constant for the column name 'parent'. */
+	String COLUMN_NAME_PARENT = "parent";
+
+	/** The Constant for the column name 'value'. */
+	String COLUMN_NAME_VALUE = "value";
 
 	/**
 	 * Gets the depth of the node

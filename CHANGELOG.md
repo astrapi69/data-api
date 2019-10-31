@@ -1,6 +1,17 @@
 ## Change log
 ----------------------
 
+Version 1.5
+-------------
+
+ADDED:
+ 
+- project github files created
+
+CHANGED:
+
+- moved column constants from the entity classes to the appropriate interfaces
+
 Version 1.4.1.1
 -------------
 

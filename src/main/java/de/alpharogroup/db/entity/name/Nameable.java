@@ -31,6 +31,9 @@ package de.alpharogroup.db.entity.name;
 public interface Nameable
 {
 
+	/** The Constant for the column name 'name'. */
+	String COLUMN_NAME_NAME = "name";
+
 	/**
 	 * Gets the name.
 	 *

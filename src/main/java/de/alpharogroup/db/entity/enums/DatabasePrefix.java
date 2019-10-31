@@ -1,7 +1,7 @@
 /**
  * The MIT License
  *
- * Copyright (C) 2015 Asterios Raptis
+ * Copyright (C) 2018 Asterios Raptis
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -41,7 +41,9 @@ public enum DatabasePrefix
 	/** The underscore for concat prefixes with names */
 	UNDERSCORE(DatabasePrefix.UNDERSCORE_PREFIX),
 	/** The prefix for the unique constraint name */
-	UNIQUE_CONSTRAINT_NAME(DatabasePrefix.UNIQUE_CONSTRAINT_PREFIX);
+	UNIQUE_CONSTRAINT_NAME(DatabasePrefix.UNIQUE_CONSTRAINT_PREFIX),
+	/** The prefix for the postgres unique constraint name */
+	UNIQUE_CONSTRAINT_PG_NAME(DatabasePrefix.UNIQUE_CONSTRAINT_PG_PREFIX);
 
 	/**
 	 * The constant for the foreign key prefix
@@ -67,6 +69,11 @@ public enum DatabasePrefix
 	 * The constant for the underscore
 	 **/
 	public static final String UNDERSCORE_PREFIX = "_";
+
+	/**
+	 * The constant for the unique constraint for postgres prefix
+	 **/
+	public static final String UNIQUE_CONSTRAINT_PG_PREFIX = "uk_";
 
 	/**
 	 * The constant for the unique constraint prefix

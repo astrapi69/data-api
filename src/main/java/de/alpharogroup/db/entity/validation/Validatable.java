@@ -33,6 +33,12 @@ package de.alpharogroup.db.entity.validation;
 public interface Validatable<T>
 {
 
+	/** The Constant for the column name 'validFrom'. */
+	String COLUMN_NAME_VALID_FROM = "validFrom";
+
+	/** The Constant for the column name 'validTill'. */
+	String COLUMN_NAME_VALID_TILL = "validTill";
+
 	/**
 	 * Gets the valid from.
 	 *

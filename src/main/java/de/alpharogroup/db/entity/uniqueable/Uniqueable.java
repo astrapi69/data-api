@@ -32,7 +32,11 @@ import java.io.Serializable;
  *
  * @param <PK>
  *            the generic type of the unique identifier
+ * @deprecated use instead the <code>Identifiable</code> interface<br>
+ *             <br>
+ *             Note: will be removed on next minor version
  */
+@Deprecated
 public interface Uniqueable<PK extends Serializable>
 {
 

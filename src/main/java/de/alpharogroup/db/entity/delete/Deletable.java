@@ -36,6 +36,12 @@ package de.alpharogroup.db.entity.delete;
 public interface Deletable<T, U>
 {
 
+	/** The Constant for the column name 'deleted'. */
+	String COLUMN_NAME_DELETED = "deleted";
+
+	/** The Constant for the column name 'deletedBy'. */
+	String COLUMN_NAME_DELETED_BY = "deletedBy";
+
 	/**
 	 * Gets the point of time from deletion
 	 *

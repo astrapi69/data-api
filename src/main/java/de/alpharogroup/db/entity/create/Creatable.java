@@ -36,6 +36,12 @@ package de.alpharogroup.db.entity.create;
 public interface Creatable<T, U>
 {
 
+	/** The Constant for the column name 'created'. */
+	String COLUMN_NAME_CREATED = "created";
+
+	/** The Constant for the column name 'active'. */
+	String COLUMN_NAME_CREATED_BY = "createdBy";
+
 	/**
 	 * Gets the point of time from creation
 	 *

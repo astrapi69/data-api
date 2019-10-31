@@ -31,6 +31,9 @@ package de.alpharogroup.db.entity.activatable;
 public interface Activatable
 {
 
+	/** The Constant for the column name 'active'. */
+	String COLUMN_NAME_ACTIVE = "active";
+
 	/**
 	 * Checks if the entity is active
 	 *

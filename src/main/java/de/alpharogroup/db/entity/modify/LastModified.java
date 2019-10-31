@@ -36,6 +36,12 @@ package de.alpharogroup.db.entity.modify;
 public interface LastModified<T, U>
 {
 
+	/** The Constant for the column name 'lastModified'. */
+	String COLUMN_NAME_LAST_MODIFIED = "lastModified";
+
+	/** The Constant for the column name 'lastModifiedBy'. */
+	String COLUMN_NAME_LAST_MODIFIED_BY = "lastModifiedBy";
+
 	/**
 	 * Gets the point of time from the last modification
 	 *
