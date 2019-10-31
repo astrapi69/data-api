@@ -1,8 +1,12 @@
 ## Change log
 ----------------------
 
-Version 1.5-SNAPSHOT
+Version 1.5
 -------------
+
+ADDED:
+ 
+- project github files created
 
 CHANGED:
 
