@@ -31,6 +31,9 @@ package de.alpharogroup.db.entity.visibility;
 public interface Visibility
 {
 
+	/** The Constant for the column name 'visible'. */
+	String COLUMN_NAME_VISIBLE = "visible";
+
 	/**
 	 * Checks if the entity is visible
 	 *

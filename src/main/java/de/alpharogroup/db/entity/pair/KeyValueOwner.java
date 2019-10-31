@@ -38,6 +38,15 @@ package de.alpharogroup.db.entity.pair;
 public interface KeyValueOwner<O, K, V>
 {
 
+	/** The Constant for the column name 'key'. */
+	String COLUMN_NAME_KEY = "key";
+
+	/** The Constant for the column name 'owner'. */
+	String COLUMN_NAME_OWNER = "owner";
+
+	/** The Constant for the column name 'value'. */
+	String COLUMN_NAME_VALUE = "value";
+
 	/**
 	 * Gets the key.
 	 *

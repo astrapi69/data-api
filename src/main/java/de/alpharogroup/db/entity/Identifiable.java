@@ -36,6 +36,9 @@ import java.io.Serializable;
 public interface Identifiable<PK extends Serializable>
 {
 
+	/** The Constant for the column name 'id'. */
+	String COLUMN_NAME_ID = "id";
+
 	/**
 	 * Gets the id.
 	 *
