@@ -1,6 +1,14 @@
 ## Change log
 ----------------------
 
+Version 1.6
+-------------
+
+CHANGED:
+
+- renamed constant UNDERSCORE_PREFIX to UNDERSCORE in enum DatabasePrefix
+- renamed enum variable UNDERSCORE to UNDERLINE in enum DatabasePrefix
+
 Version 1.5
 -------------
 

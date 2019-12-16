@@ -30,11 +30,7 @@ or over ether with:
 
 0x588Aa02De98B1Ef70afeDC3ec5290130a3E5e273
 
-or over flattr:
-
-<a href="https://flattr.com/submit/auto?fid=r7vp62&url=https%3A%2F%2Fgithub.com%2Fastrapi69%2Fent-api" target="_blank">
-<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" />
-</a>
+or over donate buttons at the top
 
 ## License
 
@@ -53,7 +49,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.5</ent-api.version>
+		<ent-api.version>1.6</ent-api.version>
 			...
 	</properties>
 			...
@@ -76,12 +72,12 @@ Add the following gradle dependency to your project `build.gradle` in the depend
 ```
 ext {
 			...
-    entApiVersion = '1.5'
+    entApiVersion = "1.6"
 			...
 }
 dependencies {
 			...
-	compile 'de.alpharogroup:ent-api:${entApiVersion}'
+	compile "de.alpharogroup:ent-api:${entApiVersion}"
 			...
 }
 ```
