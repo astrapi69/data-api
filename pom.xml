@@ -12,7 +12,7 @@
 	</parent>
 
 	<artifactId>ent-api</artifactId>
-	<version>1.6-SNAPSHOT</version>
+	<version>1.6</version>
 	<inceptionYear>2018</inceptionYear>
 
 	<name>${project.artifactId}</name>
