@@ -39,7 +39,7 @@ public enum DatabasePrefix
 	/** The prefix for the sequence name */
 	SEQUENCE_NAME(DatabasePrefix.SEQUENCE_PREFIX),
 	/** The underscore for concat prefixes with names */
-	UNDERSCORE(DatabasePrefix.UNDERSCORE_PREFIX),
+	UNDERLINE(DatabasePrefix.UNDERSCORE),
 	/** The prefix for the unique constraint name */
 	UNIQUE_CONSTRAINT_NAME(DatabasePrefix.UNIQUE_CONSTRAINT_PREFIX),
 	/** The prefix for the postgres unique constraint name */
@@ -68,7 +68,7 @@ public enum DatabasePrefix
 	/**
 	 * The constant for the underscore
 	 **/
-	public static final String UNDERSCORE_PREFIX = "_";
+	public static final String UNDERSCORE = "_";
 
 	/**
 	 * The constant for the unique constraint for postgres prefix
@@ -80,21 +80,21 @@ public enum DatabasePrefix
 	 **/
 	public static final String UNIQUE_CONSTRAINT_PREFIX = "uc_";
 
-	/** The prefix. */
-	private final String prefix;
+	/** The name */
+	private final String name;
 
-	private DatabasePrefix(final String prefix)
+	DatabasePrefix(final String name)
 	{
-		this.prefix = prefix;
+		this.name = name;
 	}
 
 	/**
-	 * Gets the specific prefix
+	 * Gets the specific name
 	 *
-	 * @return the specific prefix
+	 * @return the specific name
 	 */
-	public String getPrefix()
+	public String getName()
 	{
-		return prefix;
+		return name;
 	}
 }
