@@ -4,7 +4,15 @@
 Version 1.7-SNAPSHOT
 -------------
 
+ADDED:
 
+- gradle related files created
+- new idea run configurations for gradle tasks created
+
+CHANGED:
+
+- migration from maven to build system gradle
+- removed all maven related files
 
 Version 1.6
 -------------
