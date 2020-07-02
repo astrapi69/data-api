@@ -8,6 +8,7 @@ ADDED:
 
 - gradle related files created
 - new idea run configurations for gradle tasks created
+- new constant variables to enum class DatabasePrefix
 
 CHANGED:
 

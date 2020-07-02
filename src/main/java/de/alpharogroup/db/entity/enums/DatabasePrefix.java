@@ -80,6 +80,16 @@ public enum DatabasePrefix
 	 **/
 	public static final String UNIQUE_CONSTRAINT_PREFIX = "uc_";
 
+	/**
+	 * The constant for the default column name for the primary key
+	 **/
+	public static final String DEFAULT_COLUMN_NAME_PRIMARY_KEY = "id";
+
+	/**
+	 * The constant for the default referenced column name value
+	 **/
+	public static final String DEFAULT_REFERENCED_COLUMN_NAME_VALUE = DEFAULT_COLUMN_NAME_PRIMARY_KEY;
+
 	/** The name */
 	private final String name;
 
