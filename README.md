@@ -11,7 +11,20 @@
 
 </div>
 
-This project holds interfaces for jpa entities.
+This api project provides interfaces that jpa entities can implement for providing api features like:
+
+- identifiable entities
+- provide information for the creation, last modified and deletion
+- activate or deactivate entities
+- nameable entities that holds a name property
+- versionable entities that holds a version property
+- key value pair entities
+- tracable entities
+- treeable entities
+- validatable entities
+- verifiable entities
+- visibility of entities
+- and combination of the above descipted entities 
 
 If you like this project put a ⭐ and donate
 

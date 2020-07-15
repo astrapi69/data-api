@@ -10,11 +10,14 @@ ADDED:
 - a new interface Verifiable that can be signed and verified
 - new idea run configurations for gradle tasks created
 - new constant variables to enum class DatabasePrefix
+- new gradle.properties file
 
 CHANGED:
 
+- update gradle to new version 6.5.1
 - migration from maven to build system gradle
 - removed all maven related files
+- description of project extended in README.md file
 
 Version 1.6
 -------------
@@ -68,7 +71,6 @@ Version 1.2
 
 ADDED:
  
-- gradle as build system
 - new interfaces for store a variable length of text values
 
 Version 1.1
