@@ -62,7 +62,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.6</ent-api.version>
+		<ent-api.version>1.7</ent-api.version>
 			...
 	</properties>
 			...
@@ -85,12 +85,12 @@ Add the following gradle dependency to your project `build.gradle` in the depend
 ```
 ext {
 			...
-    entApiVersion = "1.6"
+    entApiVersion = "1.7"
 			...
 }
 dependencies {
 			...
-	compile "de.alpharogroup:ent-api:${entApiVersion}"
+	implementation("de.alpharogroup:ent-api:$entApiVersion")
 			...
 }
 ```
