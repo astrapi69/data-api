@@ -22,36 +22,26 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.uniqueable;
-
-import java.io.Serializable;
+package de.alpharogroup.db.entity.verifiable;
 
 /**
- * The interface {@link Uniqueable} can be implemented from an entity that have to be uniqueable. An
- * good example would be entities that are needed in rest services
- *
- * @param <PK>
- *            the generic type of the unique identifier
- * @deprecated use instead the <code>Identifiable</code> interface<br>
- *             <br>
- *             Note: will be removed on next minor version
+ * The interface {@link Verifiable} is for entities that can be signed and verified
  */
-@Deprecated
-public interface Uniqueable<PK extends Serializable>
+public interface Verifiable
 {
 
 	/**
-	 * Gets the uuid.
+	 * Gets the signature
 	 *
-	 * @return the uuid
+	 * @return the signature
 	 */
-	PK getUuid();
+	String getSignature();
 
 	/**
-	 * Sets the uuid.
+	 * Sets the given signature
 	 *
-	 * @param uuid
-	 *            the new uuid
+	 * @param signature the signature to set
 	 */
-	void setUuid(final PK uuid);
+	void setSignature(String signature);
+
 }
