@@ -7,6 +7,7 @@ Version 1.7-SNAPSHOT
 ADDED:
 
 - gradle related files created
+- a new interface Verifiable that can be signed and verified
 - new idea run configurations for gradle tasks created
 - new constant variables to enum class DatabasePrefix
 
@@ -20,7 +21,7 @@ Version 1.6
 
 CHANGED:
 
-- renamed constant UNDERSCORE_PREFIX to UNDERSCORE in enum DatabasePrefix
+- renamed the constant UNDERSCORE_PREFIX to UNDERSCORE in enum DatabasePrefix
 - renamed enum variable UNDERSCORE to UNDERLINE in enum DatabasePrefix
 
 Version 1.5
@@ -53,14 +54,14 @@ Version 1.3.1
 
 ADDED:
  
-- new interface Treeable that provides keeping data with in a tree structure
+- a new interface Treeable that provides keeping data with in a tree structure
 
 Version 1.2.1
 -------------
 
 ADDED:
  
-- new configuration uploadArchives in build.gradle for upload maven artifacts to maven repository
+- a new configuration uploadArchives in build.gradle for upload maven artifacts to maven repository
 
 Version 1.2
 -------------
@@ -75,7 +76,7 @@ Version 1.1
 
 ADDED:
  
-- new interface for truncate a underlying data source
+- a new interface for truncate a underlying data source
 
 Version 1
 -------------
