@@ -4,6 +4,14 @@
 Version 1.8-SNAPSHOT
 -------------
 
+ADDED:
+
+- missing interfaces that make combination of the main interfaces 
+
+CHANGED:
+
+- renamed several packages for clarity
+
 Version 1.7
 -------------
 

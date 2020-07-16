@@ -22,21 +22,53 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import de.alpharogroup.db.entity.creatable.Creatable;
-import de.alpharogroup.db.entity.deletable.Deletable;
-import de.alpharogroup.db.entity.modifiable.LastModified;
+package de.alpharogroup.db.entity.creatable;
 
 /**
- * The interface {@link Traceable} is a combination of the interfaces {@link Creatable},
- * {@link LastModified} and {@link Deletable}.
+ * The interface {@link Creatable} can be implemented from an entity that needs the data of the
+ * point of time from its creation
  *
  * @param <T>
  *            the generic type of time measurement
  * @param <U>
  *            the generic type of the user or account
  */
-public interface Traceable<T, U> extends Creatable<T, U>, LastModified<T, U>, Deletable<T, U>
+public interface Creatable<T, U>
 {
+
+	/** The Constant for the column name 'created'. */
+	String COLUMN_NAME_CREATED = "created";
+
+	/** The Constant for the column name 'active'. */
+	String COLUMN_NAME_CREATED_BY = "createdBy";
+
+	/**
+	 * Gets the point of time from creation
+	 *
+	 * @return the point of time from creation
+	 */
+	T getCreated();
+
+	/**
+	 * Gets the user or account that created this entity
+	 *
+	 * @return the user or account that created this entity
+	 */
+	U getCreatedBy();
+
+	/**
+	 * Sets the point of time from creation
+	 *
+	 * @param created
+	 *            the point of time from creation
+	 */
+	void setCreated(T created);
+
+	/**
+	 * Sets the user or account that created this entity
+	 *
+	 * @param user
+	 *            the user or account that created this entity
+	 */
+	void setCreatedBy(U user);
 }

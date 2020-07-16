@@ -22,21 +22,53 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import de.alpharogroup.db.entity.creatable.Creatable;
-import de.alpharogroup.db.entity.deletable.Deletable;
-import de.alpharogroup.db.entity.modifiable.LastModified;
+package de.alpharogroup.db.entity.deletable;
 
 /**
- * The interface {@link Traceable} is a combination of the interfaces {@link Creatable},
- * {@link LastModified} and {@link Deletable}.
+ * The interface {@link Deletable} can be implemented from an entity that needs the data of the
+ * point of time from its deletion
  *
  * @param <T>
  *            the generic type of time measurement
  * @param <U>
  *            the generic type of the user or account
  */
-public interface Traceable<T, U> extends Creatable<T, U>, LastModified<T, U>, Deletable<T, U>
+public interface Deletable<T, U>
 {
+
+	/** The Constant for the column name 'deleted'. */
+	String COLUMN_NAME_DELETED = "deleted";
+
+	/** The Constant for the column name 'deletedBy'. */
+	String COLUMN_NAME_DELETED_BY = "deletedBy";
+
+	/**
+	 * Gets the point of time from deletion
+	 *
+	 * @return the point of time from deletion
+	 */
+	T getDeleted();
+
+	/**
+	 * Gets the user or account that deleted this entity
+	 *
+	 * @return the user or account that deleted this entity
+	 */
+	U getDeletedBy();
+
+	/**
+	 * Sets the point of time from deletion
+	 *
+	 * @param created
+	 *            the point of time from deletion
+	 */
+	void setDeleted(T created);
+
+	/**
+	 * Sets the user or account that deleted this entity
+	 *
+	 * @param user
+	 *            the user or account that deleted this entity
+	 */
+	void setDeletedBy(U user);
 }

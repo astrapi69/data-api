@@ -22,21 +22,50 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import de.alpharogroup.db.entity.creatable.Creatable;
-import de.alpharogroup.db.entity.deletable.Deletable;
-import de.alpharogroup.db.entity.modifiable.LastModified;
+package de.alpharogroup.db.entity.validatable;
 
 /**
- * The interface {@link Traceable} is a combination of the interfaces {@link Creatable},
- * {@link LastModified} and {@link Deletable}.
+ * The interface {@link Validatable}.
  *
  * @param <T>
  *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
  */
-public interface Traceable<T, U> extends Creatable<T, U>, LastModified<T, U>, Deletable<T, U>
+public interface Validatable<T>
 {
+
+	/** The Constant for the column name 'validFrom'. */
+	String COLUMN_NAME_VALID_FROM = "validFrom";
+
+	/** The Constant for the column name 'validTill'. */
+	String COLUMN_NAME_VALID_TILL = "validTill";
+
+	/**
+	 * Gets the valid from.
+	 *
+	 * @return the valid from
+	 */
+	T getValidFrom();
+
+	/**
+	 * Gets the valid till.
+	 *
+	 * @return the valid till
+	 */
+	T getValidTill();
+
+	/**
+	 * Sets the valid from.
+	 *
+	 * @param validFrom
+	 *            the new valid from
+	 */
+	void setValidFrom(T validFrom);
+
+	/**
+	 * Sets the valid till.
+	 *
+	 * @param validTill
+	 *            the new valid till
+	 */
+	void setValidTill(T validTill);
 }

@@ -16,7 +16,7 @@ This api project provides interfaces that jpa entities can implement for providi
 - identifiable entities
 - provide information for the creation, last modified and deletion
 - activate or deactivate entities
-- nameable entities that holds a name property
+- name- or textable entities that holds a name property
 - versionable entities that holds a version property
 - key value pair entities
 - tracable entities

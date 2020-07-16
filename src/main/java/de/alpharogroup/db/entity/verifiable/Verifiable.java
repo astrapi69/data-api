@@ -25,7 +25,7 @@
 package de.alpharogroup.db.entity.verifiable;
 
 /**
- * The interface {@link Verifiable} is for entities that can be signed and verified
+ * The interface {@link Verifiable} is for entities that have to be signed and verified
  */
 public interface Verifiable
 {
