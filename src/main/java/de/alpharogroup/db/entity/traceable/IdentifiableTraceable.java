@@ -27,9 +27,9 @@ package de.alpharogroup.db.entity.traceable;
 import java.io.Serializable;
 
 import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.create.Creatable;
-import de.alpharogroup.db.entity.delete.Deletable;
-import de.alpharogroup.db.entity.modify.LastModified;
+import de.alpharogroup.db.entity.creatable.Creatable;
+import de.alpharogroup.db.entity.deletable.Deletable;
+import de.alpharogroup.db.entity.modifiable.LastModified;
 
 /**
  * The interface {@link IdentifiableTraceable} is a combination of the interfaces

@@ -22,21 +22,27 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import de.alpharogroup.db.entity.creatable.Creatable;
-import de.alpharogroup.db.entity.deletable.Deletable;
-import de.alpharogroup.db.entity.modifiable.LastModified;
+package de.alpharogroup.db.entity.versionable;
 
 /**
- * The interface {@link Traceable} is a combination of the interfaces {@link Creatable},
- * {@link LastModified} and {@link Deletable}.
- *
- * @param <T>
- *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
+ * The interface {@link Versionable} can be implemented from an entity that need a version property
+ * for the optimistic lock value.
  */
-public interface Traceable<T, U> extends Creatable<T, U>, LastModified<T, U>, Deletable<T, U>
+public interface Versionable
 {
+
+	/**
+	 * Gets the version.
+	 *
+	 * @return the version
+	 */
+	Integer getVersion();
+
+	/**
+	 * Sets the version.
+	 *
+	 * @param version
+	 *            the new version
+	 */
+	void setVersion(Integer version);
 }
