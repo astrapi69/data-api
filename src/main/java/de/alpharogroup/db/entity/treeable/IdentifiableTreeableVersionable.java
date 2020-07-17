@@ -24,14 +24,14 @@
  */
 package de.alpharogroup.db.entity.treeable;
 
+import java.io.Serializable;
+
 import de.alpharogroup.db.entity.Identifiable;
 import de.alpharogroup.db.entity.versionable.Versionable;
 
-import java.io.Serializable;
-
 /**
- * The interface {@link IdentifiableTreeableVersionable} is a combination of the interfaces
- *  *  * {@link Identifiable}, {@link Treeable} and {@link Versionable}
+ * The interface {@link IdentifiableTreeableVersionable} is a combination of the interfaces * *
+ * {@link Identifiable}, {@link Treeable} and {@link Versionable}
  *
  * @param <PK>
  *            the generic type of the technical primary key
@@ -43,6 +43,8 @@ import java.io.Serializable;
 @SuppressWarnings("rawtypes")
 public interface IdentifiableTreeableVersionable<PK extends Serializable, T, TR extends IdentifiableTreeableVersionable>
 	extends
-	Identifiable<PK>, Treeable<PK, T, TR>, Versionable
+		Identifiable<PK>,
+		Treeable<PK, T, TR>,
+		Versionable
 {
 }

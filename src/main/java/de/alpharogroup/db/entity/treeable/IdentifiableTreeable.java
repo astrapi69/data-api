@@ -24,9 +24,9 @@
  */
 package de.alpharogroup.db.entity.treeable;
 
-import de.alpharogroup.db.entity.Identifiable;
-
 import java.io.Serializable;
+
+import de.alpharogroup.db.entity.Identifiable;
 
 /**
  * The interface {@link IdentifiableTreeable} is a combination of the interfaces
@@ -42,6 +42,7 @@ import java.io.Serializable;
 @SuppressWarnings("rawtypes")
 public interface IdentifiableTreeable<PK extends Serializable, T, TR extends IdentifiableTreeable>
 	extends
-	Identifiable<PK>, Treeable<PK, T, TR>
+		Identifiable<PK>,
+		Treeable<PK, T, TR>
 {
 }

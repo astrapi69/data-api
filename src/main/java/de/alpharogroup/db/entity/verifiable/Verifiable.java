@@ -40,7 +40,8 @@ public interface Verifiable
 	/**
 	 * Sets the given signature
 	 *
-	 * @param signature the signature to set
+	 * @param signature
+	 *            the signature to set
 	 */
 	void setSignature(String signature);
 

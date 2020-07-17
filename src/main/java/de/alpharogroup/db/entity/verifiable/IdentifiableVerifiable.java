@@ -24,14 +24,17 @@
  */
 package de.alpharogroup.db.entity.verifiable;
 
-import de.alpharogroup.db.entity.Identifiable;
-
 import java.io.Serializable;
 
+import de.alpharogroup.db.entity.Identifiable;
+
 /**
- * The interface {@link IdentifiableVerifiable} is a combination of the interfaces
- *  * {@link Identifiable} and {@link Verifiable}
+ * The interface {@link IdentifiableVerifiable} is a combination of the interfaces *
+ * {@link Identifiable} and {@link Verifiable}
  */
-public interface IdentifiableVerifiable<PK extends Serializable> extends Identifiable<PK>, Verifiable
+public interface IdentifiableVerifiable<PK extends Serializable>
+	extends
+		Identifiable<PK>,
+		Verifiable
 {
 }
