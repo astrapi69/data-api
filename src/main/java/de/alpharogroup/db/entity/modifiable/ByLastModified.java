@@ -22,24 +22,37 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.nameable;
+package de.alpharogroup.db.entity.modifiable;
 
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.activatable.Activatable;
-
-import java.io.Serializable;
+import de.alpharogroup.db.entity.accomplishable.Accomplishable;
 
 /**
- * The interface {@link IdentifiableNameableActivatable} is a combination of the interfaces
- * {@link Identifiable}, {@link Nameable} and {@link Activatable}.
- * 
- * @param <PK>
- *            the generic type of the identifier
+ * The interface {@link ByLastModified} can be implemented from an entity that needs the data of the
+ * point of time from its last modification and who last modified
+ *
+ * @param <T>
+ *            the generic type of time measurement
+ * @param <U>
+ *            the generic type of the user or account
  */
-public interface IdentifiableNameableActivatable<PK extends Serializable>
-	extends
-		Identifiable<PK>,
-		Nameable,
-		Activatable
+public interface ByLastModified<T, U> extends LastModified<T>, Accomplishable<U>
 {
+
+	/** The Constant for the column name 'lastModifiedBy'. */
+	String COLUMN_NAME_LAST_MODIFIED_BY = "lastModifiedBy";
+
+	/**
+	 * Gets the user or account that last modified this entity
+	 *
+	 * @return the user or account that last modified this entity
+	 */
+	U getLastModifiedBy();
+
+	/**
+	 * Sets the user or account that last modified this entity
+	 *
+	 * @param user
+	 *            the user or account that last modified this entity
+	 */
+	void setLastModifiedBy(U user);
 }

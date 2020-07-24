@@ -30,17 +30,12 @@ package de.alpharogroup.db.entity.modifiable;
  *
  * @param <T>
  *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
  */
-public interface LastModified<T, U>
+public interface LastModified<T>
 {
 
 	/** The Constant for the column name 'lastModified'. */
 	String COLUMN_NAME_LAST_MODIFIED = "lastModified";
-
-	/** The Constant for the column name 'lastModifiedBy'. */
-	String COLUMN_NAME_LAST_MODIFIED_BY = "lastModifiedBy";
 
 	/**
 	 * Gets the point of time from the last modification
@@ -50,13 +45,6 @@ public interface LastModified<T, U>
 	T getLastModified();
 
 	/**
-	 * Gets the user or account that last modified this entity
-	 *
-	 * @return the user or account that last modified this entity
-	 */
-	U getLastModifiedBy();
-
-	/**
 	 * Sets the point of time from the last modification
 	 *
 	 * @param created
@@ -64,11 +52,4 @@ public interface LastModified<T, U>
 	 */
 	void setLastModified(T created);
 
-	/**
-	 * Sets the user or account that last modified this entity
-	 *
-	 * @param user
-	 *            the user or account that last modified this entity
-	 */
-	void setLastModifiedBy(U user);
 }

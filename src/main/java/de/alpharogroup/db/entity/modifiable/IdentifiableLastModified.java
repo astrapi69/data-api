@@ -24,13 +24,13 @@
  */
 package de.alpharogroup.db.entity.modifiable;
 
-import java.io.Serializable;
-
 import de.alpharogroup.db.entity.Identifiable;
+
+import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableLastModified} is a combination of the interfaces
- * {@link Identifiable} and {@link LastModified}.
+ * {@link Identifiable} and {@link ByLastModified}
  *
  * @param <PK>
  *            the generic type of the identifier
@@ -42,6 +42,6 @@ import de.alpharogroup.db.entity.Identifiable;
 public interface IdentifiableLastModified<PK extends Serializable, T, U>
 	extends
 		Identifiable<PK>,
-		LastModified<T, U>
+		ByLastModified<T, U>
 {
 }

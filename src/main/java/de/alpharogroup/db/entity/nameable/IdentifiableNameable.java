@@ -24,9 +24,9 @@
  */
 package de.alpharogroup.db.entity.nameable;
 
-import java.io.Serializable;
-
 import de.alpharogroup.db.entity.Identifiable;
+
+import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableNameable} is a combination of the interfaces

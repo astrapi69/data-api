@@ -24,10 +24,10 @@
  */
 package de.alpharogroup.db.entity.treeable;
 
-import java.io.Serializable;
-
 import de.alpharogroup.db.entity.Identifiable;
 import de.alpharogroup.db.entity.versionable.Versionable;
+
+import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableTreeableVersionable} is a combination of the interfaces * *

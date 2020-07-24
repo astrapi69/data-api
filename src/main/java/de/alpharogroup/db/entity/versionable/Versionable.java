@@ -31,6 +31,9 @@ package de.alpharogroup.db.entity.versionable;
 public interface Versionable
 {
 
+	/** The Constant for the column name 'version'. */
+	String COLUMN_NAME_VERSION = "version";
+
 	/**
 	 * Gets the version.
 	 *

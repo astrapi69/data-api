@@ -30,17 +30,12 @@ package de.alpharogroup.db.entity.deletable;
  *
  * @param <T>
  *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
  */
-public interface Deletable<T, U>
+public interface Deletable<T>
 {
 
 	/** The Constant for the column name 'deleted'. */
 	String COLUMN_NAME_DELETED = "deleted";
-
-	/** The Constant for the column name 'deletedBy'. */
-	String COLUMN_NAME_DELETED_BY = "deletedBy";
 
 	/**
 	 * Gets the point of time from deletion
@@ -50,13 +45,6 @@ public interface Deletable<T, U>
 	T getDeleted();
 
 	/**
-	 * Gets the user or account that deleted this entity
-	 *
-	 * @return the user or account that deleted this entity
-	 */
-	U getDeletedBy();
-
-	/**
 	 * Sets the point of time from deletion
 	 *
 	 * @param created
@@ -64,11 +52,4 @@ public interface Deletable<T, U>
 	 */
 	void setDeleted(T created);
 
-	/**
-	 * Sets the user or account that deleted this entity
-	 *
-	 * @param user
-	 *            the user or account that deleted this entity
-	 */
-	void setDeletedBy(U user);
 }

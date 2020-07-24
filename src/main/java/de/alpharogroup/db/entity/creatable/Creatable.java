@@ -30,17 +30,12 @@ package de.alpharogroup.db.entity.creatable;
  *
  * @param <T>
  *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
  */
-public interface Creatable<T, U>
+public interface Creatable<T>
 {
 
 	/** The Constant for the column name 'created'. */
 	String COLUMN_NAME_CREATED = "created";
-
-	/** The Constant for the column name 'active'. */
-	String COLUMN_NAME_CREATED_BY = "createdBy";
 
 	/**
 	 * Gets the point of time from creation
@@ -50,13 +45,6 @@ public interface Creatable<T, U>
 	T getCreated();
 
 	/**
-	 * Gets the user or account that created this entity
-	 *
-	 * @return the user or account that created this entity
-	 */
-	U getCreatedBy();
-
-	/**
 	 * Sets the point of time from creation
 	 *
 	 * @param created
@@ -64,11 +52,4 @@ public interface Creatable<T, U>
 	 */
 	void setCreated(T created);
 
-	/**
-	 * Sets the user or account that created this entity
-	 *
-	 * @param user
-	 *            the user or account that created this entity
-	 */
-	void setCreatedBy(U user);
 }

@@ -22,24 +22,15 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.nameable;
-
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.activatable.Activatable;
-
-import java.io.Serializable;
+package de.alpharogroup.db.entity.accomplishable;
 
 /**
- * The interface {@link IdentifiableNameableActivatable} is a combination of the interfaces
- * {@link Identifiable}, {@link Nameable} and {@link Activatable}.
- * 
- * @param <PK>
- *            the generic type of the identifier
+ * The interface {@link Accomplishable} can be implemented from an entity that needs the data of who
+ * executed or accomplished an operation on an entity
+ *
+ * @param <U>
+ *            the generic type of the user or account
  */
-public interface IdentifiableNameableActivatable<PK extends Serializable>
-	extends
-		Identifiable<PK>,
-		Nameable,
-		Activatable
+public interface Accomplishable<U>
 {
 }

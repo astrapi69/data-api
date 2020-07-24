@@ -30,6 +30,9 @@ package de.alpharogroup.db.entity.verifiable;
 public interface Verifiable
 {
 
+	/** The Constant for the column name 'signature'. */
+	String COLUMN_NAME_SIGNATURE = "signature";
+
 	/**
 	 * Gets the signature
 	 *

@@ -24,9 +24,9 @@
  */
 package de.alpharogroup.db.entity.creatable;
 
-import java.io.Serializable;
-
 import de.alpharogroup.db.entity.Identifiable;
+
+import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableCreatable} is a combination of the interfaces
@@ -36,12 +36,10 @@ import de.alpharogroup.db.entity.Identifiable;
  *            the generic type of the identifier
  * @param <T>
  *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
  */
-public interface IdentifiableCreatable<PK extends Serializable, T, U>
+public interface IdentifiableCreatable<PK extends Serializable, T>
 	extends
 		Identifiable<PK>,
-		Creatable<T, U>
+		Creatable<T>
 {
 }

@@ -22,24 +22,26 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.nameable;
+package de.alpharogroup.db.entity.creatable;
 
 import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.activatable.Activatable;
 
 import java.io.Serializable;
 
 /**
- * The interface {@link IdentifiableNameableActivatable} is a combination of the interfaces
- * {@link Identifiable}, {@link Nameable} and {@link Activatable}.
- * 
+ * The interface {@link IdentifiableByCreatable} is a combination of the interfaces
+ * {@link Identifiable} and {@link ByCreatable}
+ *
  * @param <PK>
  *            the generic type of the identifier
+ * @param <T>
+ *            the generic type of time measurement
+ * @param <U>
+ *            the generic type of the user or account
  */
-public interface IdentifiableNameableActivatable<PK extends Serializable>
+public interface IdentifiableByCreatable<PK extends Serializable, T, U>
 	extends
 		Identifiable<PK>,
-		Nameable,
-		Activatable
+		ByCreatable<T, U>
 {
 }

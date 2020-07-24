@@ -24,16 +24,18 @@
  */
 package de.alpharogroup.db.entity.traceable;
 
-import java.io.Serializable;
-
 import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.creatable.Creatable;
+import de.alpharogroup.db.entity.creatable.ByCreatable;
+import de.alpharogroup.db.entity.deletable.ByDeletable;
 import de.alpharogroup.db.entity.deletable.Deletable;
+import de.alpharogroup.db.entity.modifiable.ByLastModified;
 import de.alpharogroup.db.entity.modifiable.LastModified;
+
+import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableTraceable} is a combination of the interfaces
- * {@link Identifiable},{@link Creatable}, {@link LastModified} and {@link Deletable}.
+ * {@link Identifiable},{@link ByCreatable}, {@link ByLastModified} and {@link ByDeletable}.
  *
  * @param <T>
  *            the generic type of time measurement
@@ -43,8 +45,8 @@ import de.alpharogroup.db.entity.modifiable.LastModified;
 public interface IdentifiableTraceable<PK extends Serializable, T, U>
 	extends
 		Identifiable<PK>,
-		Creatable<T, U>,
-		LastModified<T, U>,
-		Deletable<T, U>
+		ByCreatable<T, U>,
+		ByLastModified<T, U>,
+		ByDeletable<T, U>
 {
 }

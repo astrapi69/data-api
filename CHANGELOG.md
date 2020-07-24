@@ -4,6 +4,23 @@
 Version 1.9-SNAPSHOT
 -------------
 
+ADDED:
+
+- a new interface Accomplishable and ByAccomplishable
+- a new interface ByCreatable created that reflects the old Creatable
+- a new interface ByDeletable created that reflects the old Deletable
+- a new interface ByLastModified created that reflects the old LastModified
+
+CHANGED:
+
+- removed field createdBy from the interface Creatable
+- removed field deletedBy from the interface Deletable
+- removed field lastModifiedBy from the interface LastModified
+- adapted all interfaces the extended the old Creatable and replaced with the new interface ByCreatable
+- adapted all interfaces the extended the old Deletable and replaced with the new interface ByDeletable
+- adapted all interfaces the extended the old LastModified and replaced with the new interface ByLastModified
+- update of com.github.ben-manes.versions.gradle.plugin to new version 0.29.0
+
 Version 1.8
 -------------
 

@@ -22,24 +22,37 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.nameable;
+package de.alpharogroup.db.entity.creatable;
 
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.activatable.Activatable;
-
-import java.io.Serializable;
+import de.alpharogroup.db.entity.accomplishable.Accomplishable;
 
 /**
- * The interface {@link IdentifiableNameableActivatable} is a combination of the interfaces
- * {@link Identifiable}, {@link Nameable} and {@link Activatable}.
- * 
- * @param <PK>
- *            the generic type of the identifier
+ * The interface {@link ByCreatable} can be implemented from an entity that needs the data of the
+ * point of time from its creation and who created
+ *
+ * @param <T>
+ *            the generic type of time measurement
+ * @param <U>
+ *            the generic type of the user or account
  */
-public interface IdentifiableNameableActivatable<PK extends Serializable>
-	extends
-		Identifiable<PK>,
-		Nameable,
-		Activatable
+public interface ByCreatable<T, U> extends Creatable<T>, Accomplishable<U>
 {
+
+	/** The Constant for the column name 'createdBy'. */
+	String COLUMN_NAME_CREATED_BY = "createdBy";
+
+	/**
+	 * Gets the user or account that created this entity
+	 *
+	 * @return the user or account that created this entity
+	 */
+	U getCreatedBy();
+
+	/**
+	 * Sets the user or account that created this entity
+	 *
+	 * @param user
+	 *            the user or account that created this entity
+	 */
+	void setCreatedBy(U user);
 }

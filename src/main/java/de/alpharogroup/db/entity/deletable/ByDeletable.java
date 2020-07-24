@@ -22,24 +22,37 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.nameable;
+package de.alpharogroup.db.entity.deletable;
 
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.activatable.Activatable;
-
-import java.io.Serializable;
+import de.alpharogroup.db.entity.accomplishable.Accomplishable;
 
 /**
- * The interface {@link IdentifiableNameableActivatable} is a combination of the interfaces
- * {@link Identifiable}, {@link Nameable} and {@link Activatable}.
- * 
- * @param <PK>
- *            the generic type of the identifier
+ * The interface {@link ByDeletable} can be implemented from an entity that needs the data of the
+ * point of time from its deletion and who deleted
+ *
+ * @param <T>
+ *            the generic type of time measurement
+ * @param <U>
+ *            the generic type of the user or account
  */
-public interface IdentifiableNameableActivatable<PK extends Serializable>
-	extends
-		Identifiable<PK>,
-		Nameable,
-		Activatable
+public interface ByDeletable<T, U> extends Deletable<T>, Accomplishable<U>
 {
+
+	/** The Constant for the column name 'deletedBy'. */
+	String COLUMN_NAME_DELETED_BY = "deletedBy";
+
+	/**
+	 * Gets the user or account that deleted this entity
+	 *
+	 * @return the user or account that deleted this entity
+	 */
+	U getDeletedBy();
+
+	/**
+	 * Sets the user or account that deleted this entity
+	 *
+	 * @param user
+	 *            the user or account that deleted this entity
+	 */
+	void setDeletedBy(U user);
 }
