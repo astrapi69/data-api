@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 1.10-SNAPSHOT
+Version 1.10
 -------------
 
 ADDED:
