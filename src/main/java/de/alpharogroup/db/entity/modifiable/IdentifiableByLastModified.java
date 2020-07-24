@@ -22,24 +22,26 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.deletable;
-
-import java.io.Serializable;
+package de.alpharogroup.db.entity.modifiable;
 
 import de.alpharogroup.db.entity.Identifiable;
 
+import java.io.Serializable;
+
 /**
- * The interface {@link IdentifiableDeletable} is a combination of the interfaces
- * {@link Identifiable} and {@link Deletable}.
+ * The interface {@link IdentifiableByLastModified} is a combination of the interfaces
+ * {@link Identifiable} and {@link ByLastModified}
  *
  * @param <PK>
  *            the generic type of the identifier
  * @param <T>
  *            the generic type of time measurement
+ * @param <U>
+ *            the generic type of the user or account
  */
-public interface IdentifiableDeletable<PK extends Serializable, T>
+public interface IdentifiableByLastModified<PK extends Serializable, T, U>
 	extends
 		Identifiable<PK>,
-		Deletable<T>
+		ByLastModified<T, U>
 {
 }

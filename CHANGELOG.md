@@ -4,6 +4,10 @@
 Version 1.10-SNAPSHOT
 -------------
 
+ADDED:
+
+- a new interface IdentifiableByDeletable and IdentifiableByLastModified
+
 Version 1.9
 -------------
 
