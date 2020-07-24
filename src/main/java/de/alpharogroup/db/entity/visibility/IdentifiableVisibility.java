@@ -24,9 +24,9 @@
  */
 package de.alpharogroup.db.entity.visibility;
 
-import de.alpharogroup.db.entity.Identifiable;
-
 import java.io.Serializable;
+
+import de.alpharogroup.db.entity.Identifiable;
 
 /**
  * The interface {@link IdentifiableVisibility} is a combination of the interfaces

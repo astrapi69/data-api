@@ -24,10 +24,10 @@
  */
 package de.alpharogroup.db.entity.validatable.versionable;
 
+import java.io.Serializable;
+
 import de.alpharogroup.db.entity.validatable.IdentifiableValidatable;
 import de.alpharogroup.db.entity.versionable.Versionable;
-
-import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableValidatableVersionable} is a combination of the interfaces

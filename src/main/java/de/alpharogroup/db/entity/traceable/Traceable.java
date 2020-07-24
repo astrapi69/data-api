@@ -26,16 +26,16 @@ package de.alpharogroup.db.entity.traceable;
 
 import de.alpharogroup.db.entity.creatable.ByCreatable;
 import de.alpharogroup.db.entity.deletable.ByDeletable;
-import de.alpharogroup.db.entity.deletable.Deletable;
 import de.alpharogroup.db.entity.modifiable.ByLastModified;
-import de.alpharogroup.db.entity.modifiable.LastModified;
 
 /**
  * The interface {@link Traceable} is a combination of the interfaces {@link ByCreatable},
  * {@link ByLastModified} and {@link ByDeletable}
  *
- * @param <T> the generic type of time measurement
- * @param <U> the generic type of the user or account
+ * @param <T>
+ *            the generic type of time measurement
+ * @param <U>
+ *            the generic type of the user or account
  */
 public interface Traceable<T, U> extends ByCreatable<T, U>, ByLastModified<T, U>, ByDeletable<T, U>
 {

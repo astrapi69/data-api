@@ -25,8 +25,8 @@
 package de.alpharogroup.db.entity.accomplishable;
 
 /**
- * The interface {@link ByAccomplishable} can be implemented from an entity that needs the data of who
- * executed or accomplished an operation on an entity with a field accomplishedBy
+ * The interface {@link ByAccomplishable} can be implemented from an entity that needs the data of
+ * who executed or accomplished an operation on an entity with a field accomplishedBy
  *
  * @param <U>
  *            the generic type of the user or account

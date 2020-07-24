@@ -24,10 +24,10 @@
  */
 package de.alpharogroup.db.entity.nameable;
 
+import java.io.Serializable;
+
 import de.alpharogroup.db.entity.Identifiable;
 import de.alpharogroup.db.entity.activatable.Activatable;
-
-import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableNameableActivatable} is a combination of the interfaces

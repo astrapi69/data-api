@@ -26,7 +26,6 @@ package de.alpharogroup.db.entity.auditable;
 
 import de.alpharogroup.db.entity.creatable.ByCreatable;
 import de.alpharogroup.db.entity.modifiable.ByLastModified;
-import de.alpharogroup.db.entity.modifiable.LastModified;
 
 /**
  * The interface {@link Auditable} is a combination of the interfaces {@link ByCreatable} and
