@@ -11,7 +11,20 @@
 
 </div>
 
-This project holds interfaces for jpa entities.
+This api project provides interfaces that jpa entities can implement for providing api features like:
+
+- identifiable entities
+- provide information for the creation, last modified and deletion
+- activate or deactivate entities
+- name- or textable entities that holds a name property
+- versionable entities that holds a version property
+- key value pair entities
+- tracable entities
+- treeable entities
+- validatable entities
+- verifiable entities
+- visibility of entities
+- and combination of the above descipted entities 
 
 If you like this project put a ⭐ and donate
 
@@ -49,7 +62,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.6</ent-api.version>
+		<ent-api.version>1.9</ent-api.version>
 			...
 	</properties>
 			...
@@ -72,12 +85,12 @@ Add the following gradle dependency to your project `build.gradle` in the depend
 ```
 ext {
 			...
-    entApiVersion = "1.6"
+    entApiVersion = "1.9"
 			...
 }
 dependencies {
 			...
-	compile "de.alpharogroup:ent-api:${entApiVersion}"
+	implementation("de.alpharogroup:ent-api:$entApiVersion")
 			...
 }
 ```

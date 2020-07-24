@@ -22,29 +22,27 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
+package de.alpharogroup.db.entity.treeable;
 
 import java.io.Serializable;
 
 import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.creatable.ByCreatable;
-import de.alpharogroup.db.entity.deletable.ByDeletable;
-import de.alpharogroup.db.entity.modifiable.ByLastModified;
 
 /**
- * The interface {@link IdentifiableTraceable} is a combination of the interfaces
- * {@link Identifiable},{@link ByCreatable}, {@link ByLastModified} and {@link ByDeletable}.
+ * The interface {@link IdentifiableTreeable} is a combination of the interfaces
+ * {@link Identifiable} and {@link Treeable}
  *
+ * @param <PK>
+ *            the generic type of the technical primary key
  * @param <T>
- *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
+ *            the generic type of the value from this tree entity
+ * @param <TR>
+ *            the generic type of the concrete entity that will implement this interface
  */
-public interface IdentifiableTraceable<PK extends Serializable, T, U>
+@SuppressWarnings("rawtypes")
+public interface IdentifiableTreeable<PK extends Serializable, T, TR extends IdentifiableTreeable>
 	extends
 		Identifiable<PK>,
-		ByCreatable<T, U>,
-		ByLastModified<T, U>,
-		ByDeletable<T, U>
+		Treeable<PK, T, TR>
 {
 }

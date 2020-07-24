@@ -27,11 +27,10 @@ package de.alpharogroup.db.entity.visibility;
 import java.io.Serializable;
 
 import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.version.Versionable;
 
 /**
  * The interface {@link IdentifiableVisibility} is a combination of the interfaces
- * {@link Identifiable} and {@link Versionable}.
+ * {@link Identifiable} and {@link Visibility}.
  * 
  * @param <PK>
  *            the generic type of the identifier

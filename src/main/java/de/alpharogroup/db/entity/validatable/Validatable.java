@@ -22,29 +22,50 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import java.io.Serializable;
-
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.creatable.ByCreatable;
-import de.alpharogroup.db.entity.deletable.ByDeletable;
-import de.alpharogroup.db.entity.modifiable.ByLastModified;
+package de.alpharogroup.db.entity.validatable;
 
 /**
- * The interface {@link IdentifiableTraceable} is a combination of the interfaces
- * {@link Identifiable},{@link ByCreatable}, {@link ByLastModified} and {@link ByDeletable}.
+ * The interface {@link Validatable}.
  *
  * @param <T>
  *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
  */
-public interface IdentifiableTraceable<PK extends Serializable, T, U>
-	extends
-		Identifiable<PK>,
-		ByCreatable<T, U>,
-		ByLastModified<T, U>,
-		ByDeletable<T, U>
+public interface Validatable<T>
 {
+
+	/** The Constant for the column name 'validFrom'. */
+	String COLUMN_NAME_VALID_FROM = "validFrom";
+
+	/** The Constant for the column name 'validTill'. */
+	String COLUMN_NAME_VALID_TILL = "validTill";
+
+	/**
+	 * Gets the valid from.
+	 *
+	 * @return the valid from
+	 */
+	T getValidFrom();
+
+	/**
+	 * Gets the valid till.
+	 *
+	 * @return the valid till
+	 */
+	T getValidTill();
+
+	/**
+	 * Sets the valid from.
+	 *
+	 * @param validFrom
+	 *            the new valid from
+	 */
+	void setValidFrom(T validFrom);
+
+	/**
+	 * Sets the valid till.
+	 *
+	 * @param validTill
+	 *            the new valid till
+	 */
+	void setValidTill(T validTill);
 }

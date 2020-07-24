@@ -46,6 +46,16 @@ public enum DatabasePrefix
 	UNIQUE_CONSTRAINT_PG_NAME(DatabasePrefix.UNIQUE_CONSTRAINT_PG_PREFIX);
 
 	/**
+	 * The constant for the default column name for the primary key
+	 **/
+	public static final String DEFAULT_COLUMN_NAME_PRIMARY_KEY = "id";
+
+	/**
+	 * The constant for the default referenced column name value
+	 **/
+	public static final String DEFAULT_REFERENCED_COLUMN_NAME_VALUE = DEFAULT_COLUMN_NAME_PRIMARY_KEY;
+
+	/**
 	 * The constant for the foreign key prefix
 	 **/
 	public static final String FOREIGN_KEY_PREFIX = "fk_";

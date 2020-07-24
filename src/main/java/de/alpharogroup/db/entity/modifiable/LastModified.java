@@ -22,29 +22,34 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import java.io.Serializable;
-
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.creatable.ByCreatable;
-import de.alpharogroup.db.entity.deletable.ByDeletable;
-import de.alpharogroup.db.entity.modifiable.ByLastModified;
+package de.alpharogroup.db.entity.modifiable;
 
 /**
- * The interface {@link IdentifiableTraceable} is a combination of the interfaces
- * {@link Identifiable},{@link ByCreatable}, {@link ByLastModified} and {@link ByDeletable}.
+ * The interface {@link LastModified} can be implemented from an entity that needs the data of the
+ * point of time from its last modification
  *
  * @param <T>
  *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
  */
-public interface IdentifiableTraceable<PK extends Serializable, T, U>
-	extends
-		Identifiable<PK>,
-		ByCreatable<T, U>,
-		ByLastModified<T, U>,
-		ByDeletable<T, U>
+public interface LastModified<T>
 {
+
+	/** The Constant for the column name 'lastModified'. */
+	String COLUMN_NAME_LAST_MODIFIED = "lastModified";
+
+	/**
+	 * Gets the point of time from the last modification
+	 *
+	 * @return the point of time from the last modification
+	 */
+	T getLastModified();
+
+	/**
+	 * Sets the point of time from the last modification
+	 *
+	 * @param created
+	 *            the new point of time from the last modification
+	 */
+	void setLastModified(T created);
+
 }

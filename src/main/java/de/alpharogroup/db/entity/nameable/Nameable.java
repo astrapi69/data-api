@@ -22,29 +22,30 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import java.io.Serializable;
-
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.creatable.ByCreatable;
-import de.alpharogroup.db.entity.deletable.ByDeletable;
-import de.alpharogroup.db.entity.modifiable.ByLastModified;
+package de.alpharogroup.db.entity.nameable;
 
 /**
- * The interface {@link IdentifiableTraceable} is a combination of the interfaces
- * {@link Identifiable},{@link ByCreatable}, {@link ByLastModified} and {@link ByDeletable}.
- *
- * @param <T>
- *            the generic type of time measurement
- * @param <U>
- *            the generic type of the user or account
+ * The interface {@link Nameable} can be implemented from an entity for a table with a single string
+ * value.
  */
-public interface IdentifiableTraceable<PK extends Serializable, T, U>
-	extends
-		Identifiable<PK>,
-		ByCreatable<T, U>,
-		ByLastModified<T, U>,
-		ByDeletable<T, U>
+public interface Nameable
 {
+
+	/** The Constant for the column name 'name'. */
+	String COLUMN_NAME_NAME = "name";
+
+	/**
+	 * Gets the name.
+	 *
+	 * @return the name
+	 */
+	String getName();
+
+	/**
+	 * Sets the name.
+	 *
+	 * @param name
+	 *            the new name
+	 */
+	void setName(String name);
 }

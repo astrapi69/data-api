@@ -22,29 +22,33 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.traceable;
-
-import java.io.Serializable;
-
-import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.creatable.ByCreatable;
-import de.alpharogroup.db.entity.deletable.ByDeletable;
-import de.alpharogroup.db.entity.modifiable.ByLastModified;
+package de.alpharogroup.db.entity.accomplishable;
 
 /**
- * The interface {@link IdentifiableTraceable} is a combination of the interfaces
- * {@link Identifiable},{@link ByCreatable}, {@link ByLastModified} and {@link ByDeletable}.
+ * The interface {@link ByAccomplishable} can be implemented from an entity that needs the data of
+ * who executed or accomplished an operation on an entity with a field accomplishedBy
  *
- * @param <T>
- *            the generic type of time measurement
  * @param <U>
  *            the generic type of the user or account
  */
-public interface IdentifiableTraceable<PK extends Serializable, T, U>
-	extends
-		Identifiable<PK>,
-		ByCreatable<T, U>,
-		ByLastModified<T, U>,
-		ByDeletable<T, U>
+public interface ByAccomplishable<U> extends Accomplishable<U>
 {
+
+	/** The Constant for the column name 'accomplishedBy'. */
+	String COLUMN_NAME_ACCOMPLISHED_BY = "accomplishedBy";
+
+	/**
+	 * Gets the user or account that accomplished the operation
+	 *
+	 * @return the user or account that accomplished the operation
+	 */
+	U getAccomplishedBy();
+
+	/**
+	 * Sets the user or account that accomplished the operation
+	 *
+	 * @param user
+	 *            the user or account that accomplished the operation
+	 */
+	void setAccomplishedBy(U user);
 }

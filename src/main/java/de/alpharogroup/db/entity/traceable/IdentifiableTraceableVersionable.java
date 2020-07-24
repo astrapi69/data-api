@@ -27,14 +27,14 @@ package de.alpharogroup.db.entity.traceable;
 import java.io.Serializable;
 
 import de.alpharogroup.db.entity.Identifiable;
-import de.alpharogroup.db.entity.create.Creatable;
-import de.alpharogroup.db.entity.delete.Deletable;
-import de.alpharogroup.db.entity.modify.LastModified;
-import de.alpharogroup.db.entity.version.Versionable;
+import de.alpharogroup.db.entity.creatable.ByCreatable;
+import de.alpharogroup.db.entity.deletable.ByDeletable;
+import de.alpharogroup.db.entity.modifiable.ByLastModified;
+import de.alpharogroup.db.entity.versionable.Versionable;
 
 /**
  * The interface {@link IdentifiableTraceableVersionable} is a combination of the interfaces
- * {@link Identifiable},{@link Creatable}, {@link LastModified}, {@link Deletable} and
+ * {@link Identifiable},{@link ByCreatable}, {@link ByLastModified}, {@link ByDeletable} and
  * {@link Versionable}.
  *
  * @param <T>
@@ -45,9 +45,9 @@ import de.alpharogroup.db.entity.version.Versionable;
 public interface IdentifiableTraceableVersionable<PK extends Serializable, T, U>
 	extends
 		Identifiable<PK>,
-		Creatable<T, U>,
-		LastModified<T, U>,
-		Deletable<T, U>,
+		ByCreatable<T, U>,
+		ByLastModified<T, U>,
+		ByDeletable<T, U>,
 		Versionable
 {
 }
