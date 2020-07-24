@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 1.10
+-------------
+
+ADDED:
+
+- a new interface IdentifiableByDeletable and IdentifiableByLastModified
+
 Version 1.9
 -------------
 
