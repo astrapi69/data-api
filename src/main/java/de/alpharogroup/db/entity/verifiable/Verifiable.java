@@ -33,6 +33,9 @@ public interface Verifiable
 	/** The Constant for the column name 'signature'. */
 	String COLUMN_NAME_SIGNATURE = "signature";
 
+	/** The Constant for the column name 'processable'. */
+	String COLUMN_NAME_PROCESSABLE = "processable";
+
 	/**
 	 * Gets the signature
 	 *
@@ -47,5 +50,22 @@ public interface Verifiable
 	 *            the signature to set
 	 */
 	void setSignature(String signature);
+
+	/**
+	 * Gets the flag if this object can be processed
+	 *
+	 * @return true if this object can be processed, otherwise false
+	 */
+	boolean isProcessable();
+
+	/**
+	 * Sets the processable. This flag will be set to false if this object has been manipulated from
+	 * an inappropriate user. That means that the verification process failed and will be set from
+	 * the verification process to false
+	 *
+	 * @param processable
+	 *            the new processable
+	 */
+	void setProcessable(boolean processable);
 
 }
