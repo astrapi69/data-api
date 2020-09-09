@@ -24,7 +24,7 @@
  */
 package de.alpharogroup.db.entity.modifiable;
 
-import de.alpharogroup.db.entity.Identifiable;
+import de.alpharogroup.db.entity.identifiable.Identifiable;
 
 import java.io.Serializable;
 

@@ -24,7 +24,7 @@
  */
 package de.alpharogroup.db.entity.deletable;
 
-import de.alpharogroup.db.entity.Identifiable;
+import de.alpharogroup.db.entity.identifiable.Identifiable;
 
 import java.io.Serializable;
 

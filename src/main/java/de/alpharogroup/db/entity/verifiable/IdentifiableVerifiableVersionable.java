@@ -26,7 +26,7 @@ package de.alpharogroup.db.entity.verifiable;
 
 import java.io.Serializable;
 
-import de.alpharogroup.db.entity.Identifiable;
+import de.alpharogroup.db.entity.identifiable.Identifiable;
 import de.alpharogroup.db.entity.versionable.Versionable;
 
 /**

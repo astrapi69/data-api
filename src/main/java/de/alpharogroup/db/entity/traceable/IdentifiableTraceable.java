@@ -26,7 +26,7 @@ package de.alpharogroup.db.entity.traceable;
 
 import java.io.Serializable;
 
-import de.alpharogroup.db.entity.Identifiable;
+import de.alpharogroup.db.entity.identifiable.Identifiable;
 import de.alpharogroup.db.entity.creatable.ByCreatable;
 import de.alpharogroup.db.entity.deletable.ByDeletable;
 import de.alpharogroup.db.entity.modifiable.ByLastModified;

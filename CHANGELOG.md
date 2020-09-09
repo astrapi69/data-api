@@ -1,8 +1,12 @@
 ## Change log
 ----------------------
 
-Version 1.12-SNAPSHOT
+Version 2-SNAPSHOT
 -------------
+
+CHANGED:
+
+- move of interface Identifiable from the base package to its own package
 
 Version 1.11
 -------------
