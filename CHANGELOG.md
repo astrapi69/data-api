@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 2
+-------------
+
+CHANGED:
+
+- move of interface Identifiable from the base package to its own package
+
 Version 1.11
 -------------
 
@@ -11,6 +18,7 @@ ADDED:
 CHANGED:
 
 - update gradle to new version 6.6.1
+- update of com.github.ben-manes.versions.gradle.plugin to new version 0.31.0
 
 Version 1.10
 -------------
@@ -18,7 +26,6 @@ Version 1.10
 ADDED:
 
 - a new interface IdentifiableByDeletable and IdentifiableByLastModified
-- update of com.github.ben-manes.versions.gradle.plugin to new version 0.31.0
 
 Version 1.9
 -------------

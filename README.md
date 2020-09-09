@@ -65,7 +65,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.11</ent-api.version>
+		<ent-api.version>2</ent-api.version>
 			...
 	</properties>
 			...
@@ -88,7 +88,7 @@ Add the following gradle dependency to your project `build.gradle` in the depend
 ```
 ext {
 			...
-    entApiVersion = "1.11"
+    entApiVersion = "2"
 			...
 }
 dependencies {

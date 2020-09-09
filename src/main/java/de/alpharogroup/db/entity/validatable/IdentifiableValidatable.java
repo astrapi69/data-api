@@ -26,7 +26,7 @@ package de.alpharogroup.db.entity.validatable;
 
 import java.io.Serializable;
 
-import de.alpharogroup.db.entity.Identifiable;
+import de.alpharogroup.db.entity.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableValidatable} is a combination of the interfaces

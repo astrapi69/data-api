@@ -26,7 +26,7 @@ package de.alpharogroup.db.entity.deletable;
 
 import java.io.Serializable;
 
-import de.alpharogroup.db.entity.Identifiable;
+import de.alpharogroup.db.entity.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableDeletable} is a combination of the interfaces

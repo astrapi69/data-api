@@ -26,7 +26,7 @@ package de.alpharogroup.db.entity.modifiable;
 
 import java.io.Serializable;
 
-import de.alpharogroup.db.entity.Identifiable;
+import de.alpharogroup.db.entity.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableLastModified} is a combination of the interfaces
