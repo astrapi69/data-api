@@ -24,28 +24,23 @@
  */
 package de.alpharogroup.db.entity.verifiable;
 
+import de.alpharogroup.db.entity.processable.Processable;
+
 /**
- * The interface {@link Verifiable} is for entities that have to be signed and verified
+ * The interface {@link VerifiableProcessable} is for entities that have to be signed ,verified
+ * and processable. Processable flag is false if the verification failed
  */
-public interface Verifiable
+public interface VerifiableProcessable extends Verifiable, Processable
 {
 
-	/** The Constant for the column name 'signature'. */
-	String COLUMN_NAME_SIGNATURE = "signature";
-
 	/**
-	 * Gets the signature
+	 * Sets the processable. This flag will be set to false if this object has been manipulated from
+	 * an inappropriate user. That means that the verification process failed and will be set from
+	 * the verification process to false
 	 *
-	 * @return the signature
+	 * @param processable
+	 *            the new processable
 	 */
-	String getSignature();
-
-	/**
-	 * Sets the given signature
-	 *
-	 * @param signature
-	 *            the signature to set
-	 */
-	void setSignature(String signature);
+	void setProcessable(boolean processable);
 
 }

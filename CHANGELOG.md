@@ -4,6 +4,10 @@
 Version 1.11-SNAPSHOT
 -------------
 
+ADDED:
+
+- a new interface Processable and VerifiableProcessable
+
 Version 1.10
 -------------
 
