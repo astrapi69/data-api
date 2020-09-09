@@ -11,20 +11,23 @@
 
 </div>
 
-This api project provides interfaces that jpa entities can implement for providing api features like:
+This api project provides interfaces that data objects(for instance jpa entities) can implement for providing api features like:
 
-- identifiable entities
+- identifiable objects
 - provide information for the creation, last modified and deletion
-- activate or deactivate entities
-- name- or textable entities that holds a name property
-- versionable entities that holds a version property
-- key value pair entities
-- tracable entities
-- treeable entities
-- validatable entities
-- verifiable entities
-- visibility of entities
-- and combination of the above descipted entities 
+- activate or deactivate objects
+- name- or textable objects that holds a name property
+- versionable objects that holds a version property
+- key value pair objects
+- processable objects
+- tracable objects
+- treeable objects
+- validatable objects
+- verifiable objects
+- visibility of objects
+- and combination of the above descipted objects 
+
+Note: The project holds only interfaces and has no dependencies to other libraries
 
 If you like this project put a ⭐ and donate
 
@@ -62,7 +65,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>1.10</ent-api.version>
+		<ent-api.version>1.11</ent-api.version>
 			...
 	</properties>
 			...
@@ -85,7 +88,7 @@ Add the following gradle dependency to your project `build.gradle` in the depend
 ```
 ext {
 			...
-    entApiVersion = "1.10"
+    entApiVersion = "1.11"
 			...
 }
 dependencies {

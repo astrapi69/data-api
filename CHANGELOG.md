@@ -1,12 +1,16 @@
 ## Change log
 ----------------------
 
-Version 1.11-SNAPSHOT
+Version 1.11
 -------------
 
 ADDED:
 
 - a new interface Processable and VerifiableProcessable
+
+CHANGED:
+
+- update gradle to new version 6.6.1
 
 Version 1.10
 -------------
@@ -14,6 +18,7 @@ Version 1.10
 ADDED:
 
 - a new interface IdentifiableByDeletable and IdentifiableByLastModified
+- update of com.github.ben-manes.versions.gradle.plugin to new version 0.31.0
 
 Version 1.9
 -------------
