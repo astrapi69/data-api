@@ -22,30 +22,29 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package de.alpharogroup.db.entity.verifiable;
+package de.alpharogroup.db.entity.processable;
 
 /**
- * The interface {@link Verifiable} is for entities that have to be signed and verified
+ * The interface {@link Processable} is for entities that have to be processable
  */
-public interface Verifiable
+public interface Processable
 {
-
-	/** The Constant for the column name 'signature'. */
-	String COLUMN_NAME_SIGNATURE = "signature";
-
-	/**
-	 * Gets the signature
-	 *
-	 * @return the signature
-	 */
-	String getSignature();
+	/** The Constant for the column name 'processable'. */
+	String COLUMN_NAME_PROCESSABLE = "processable";
 
 	/**
-	 * Sets the given signature
+	 * Gets the flag if this object can be processed
 	 *
-	 * @param signature
-	 *            the signature to set
+	 * @return true if this object can be processed, otherwise false
 	 */
-	void setSignature(String signature);
+	boolean isProcessable();
+
+	/**
+	 * Sets the processable.
+	 *
+	 * @param processable
+	 *            the new processable
+	 */
+	void setProcessable(boolean processable);
 
 }

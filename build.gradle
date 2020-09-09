@@ -1,11 +1,22 @@
 
-plugins {
-    id "java"
-    id "maven-publish"
-    id "signing"
-    id "com.github.ben-manes.versions" version "0.29.0"
-    id "com.github.hierynomus.license" version "0.15.0"
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "com.github.ben-manes:gradle-versions-plugin:$gradlePluginVersionsVersion"
+        classpath "gradle.plugin.com.hierynomus.gradle.plugins:license-gradle-plugin:$licenseGradlePluginVersion"
+    }
 }
+
+apply plugin: "java"
+apply plugin: "java-library"
+apply plugin: "maven-publish"
+apply plugin: "signing"
+apply plugin: "com.github.ben-manes.versions"
+apply plugin: "com.github.hierynomus.license"
 
 group = "$groupPackage"
 version = "$projectVersion"
@@ -27,6 +38,22 @@ task javadocJar(type: Jar) {
     from javadoc
     archiveClassifier.set("javadoc")
     javadoc.properties.failOnError = true
+}
+
+jar {
+    manifest {
+        attributes(
+                "Name"                  : project.name,
+                "Manifest-Version"      : project.version,
+                "Implementation-Title"  : "$groupPackage" + "." + "$rootProject.name",
+                "Implementation-Version": project.version,
+                "Implementation-Vendor" : "$projectLeaderName",
+                "Created-By"            : "Gradle ${gradle.gradleVersion}",
+                "Built-By"              : "$projectLeaderName",
+                "Build-Timestamp"       : new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSZ").format(new Date()),
+                "Build-Jdk"             : "${System.properties['java.version']} (${System.properties['java.vendor']} ${System.properties['java.vm.version']})",
+                "Build-OS"              : "${System.properties['os.name']} ${System.properties['os.arch']} ${System.properties['os.version']}")
+    }
 }
 
 def releaseVersion = !version.endsWith("SNAPSHOT")

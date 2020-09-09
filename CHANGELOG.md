@@ -1,12 +1,24 @@
 ## Change log
 ----------------------
 
+Version 1.11
+-------------
+
+ADDED:
+
+- a new interface Processable and VerifiableProcessable
+
+CHANGED:
+
+- update gradle to new version 6.6.1
+
 Version 1.10
 -------------
 
 ADDED:
 
 - a new interface IdentifiableByDeletable and IdentifiableByLastModified
+- update of com.github.ben-manes.versions.gradle.plugin to new version 0.31.0
 
 Version 1.9
 -------------
@@ -20,9 +32,9 @@ ADDED:
 
 CHANGED:
 
-- removed field createdBy from the interface Creatable
-- removed field deletedBy from the interface Deletable
-- removed field lastModifiedBy from the interface LastModified
+- removed the field createdBy from the interface Creatable
+- removed the field deletedBy from the interface Deletable
+- removed the field lastModifiedBy from the interface LastModified
 - adapted all interfaces the extended the old Creatable and replaced with the new interface ByCreatable
 - adapted all interfaces the extended the old Deletable and replaced with the new interface ByDeletable
 - adapted all interfaces the extended the old LastModified and replaced with the new interface ByLastModified
