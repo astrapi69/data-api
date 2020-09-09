@@ -32,15 +32,4 @@ import de.alpharogroup.db.entity.processable.Processable;
  */
 public interface VerifiableProcessable extends Verifiable, Processable
 {
-
-	/**
-	 * Sets the processable. This flag will be set to false if this object has been manipulated from
-	 * an inappropriate user. That means that the verification process failed and will be set from
-	 * the verification process to false
-	 *
-	 * @param processable
-	 *            the new processable
-	 */
-	void setProcessable(boolean processable);
-
 }
