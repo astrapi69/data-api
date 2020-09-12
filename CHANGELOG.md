@@ -4,7 +4,9 @@
 Version 2.1-SNAPSHOT
 -------------
 
+ADDED:
 
+- a new enum VerificationState that can holds the state of a verifiable object
 
 Version 2
 -------------
