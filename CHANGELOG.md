@@ -7,6 +7,7 @@ Version 2.1-SNAPSHOT
 ADDED:
 
 - a new enum VerificationState that can holds the state of a verifiable object
+- a new interface GenericProcessable with a generic parameter for the process info object
 
 Version 2
 -------------
