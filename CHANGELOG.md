@@ -9,6 +9,11 @@ ADDED:
 - a new enum VerificationState that can holds the state of a verifiable object
 - a new interface GenericProcessable with a generic parameter for the process info object
 
+CHANGED:
+
+- update gradle to new version 7.0
+- update of com.github.ben-manes.versions.gradle.plugin to new version 0.38.0
+
 Version 2
 -------------
 
