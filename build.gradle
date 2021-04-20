@@ -24,7 +24,6 @@ description = "$rootProject.name"
 sourceCompatibility = "$projectSourceCompatibility"
 
 repositories {
-    jcenter()
     mavenLocal()
     mavenCentral()
 }
@@ -45,7 +44,7 @@ jar {
         attributes(
                 "Name"                  : project.name,
                 "Manifest-Version"      : project.version,
-                "Implementation-Title"  : "$groupPackage" + "." + "$rootProject.name",
+                "Implementation-Title"  : "$rootProject.name",
                 "Implementation-Version": project.version,
                 "Implementation-Vendor" : "$projectLeaderName",
                 "Created-By"            : "Gradle ${gradle.gradleVersion}",
