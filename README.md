@@ -1,11 +1,11 @@
 # Overview
 
-<div align="center">
+<div style="text-align: center">
 
 [![Build Status](https://travis-ci.org/astrapi69/ent-api.svg?branch=master)](https://travis-ci.org/astrapi69/ent-api) 
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/ent-api.svg?style=flat)](https://github.com/astrapi69/ent-api/issues) 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/ent-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.alpharogroup/ent-api)
-[![Javadocs](http://www.javadoc.io/badge/de.alpharogroup/ent-api.svg)](http://www.javadoc.io/doc/de.alpharogroup/ent-api)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/ent-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/ent-api)
+[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/ent-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/ent-api)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 
@@ -55,7 +55,7 @@ The source code comes under the liberal MIT License, making ent-api great for al
 ## Maven dependency
 
 Maven dependency is now on sonatype.
-Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~de.alpharogroup~ent-api~~~) for latest snapshots and releases.
+Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~ent-api~~~) for latest snapshots and releases.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core functionality of ent-api:
 
@@ -73,7 +73,7 @@ Than you can add the dependency to your dependencies:
 			...
 			<!-- ENT-API DEPENDENCY -->
 			<dependency>
-				<groupId>de.alpharogroup</groupId>
+				<groupId>io.github.astrapi69</groupId>
 				<artifactId>ent-api</artifactId>
 				<version>${ent-api.version}</version>
 			</dependency>
@@ -106,7 +106,7 @@ and than add the dependency to the dependencies area
 ```
 dependencies {
 			...
-	implementation("de.alpharogroup:ent-api:$entApiVersion")
+	implementation("io.github.astrapi69:ent-api:$entApiVersion")
 			...
 }
 ```
@@ -146,12 +146,12 @@ Do not hesitate to contact the ent-api developers with your questions, concerns,
 
 |**Nexus Sonatype repositories**|
 |     :---:      |
-|[![sonatype repository](https://img.shields.io/nexus/r/https/oss.sonatype.org/de.alpharogroup/ent-api.svg?style=for-the-badge)](https://oss.sonatype.org/index.html#nexus-search;gav~de.alpharogroup~ent-api~~~)|
+|[![sonatype repository](https://img.shields.io/nexus/r/https/oss.sonatype.org/io.github.astrapi69/ent-api.svg?style=for-the-badge)](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~ent-api~~~)|
 |Special thanks to [sonatype repository](https://www.sonatype.com) for providing a free maven repository service for open source projects|
 |     <img width=1000/>     |
 
 |**javadoc.io**|
 |     :---:      |
-|[![Javadocs](http://www.javadoc.io/badge/de.alpharogroup/ent-api.svg)](http://www.javadoc.io/doc/de.alpharogroup/ent-api)|
+|[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/ent-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/ent-api)|
 |Special thanks to [javadoc.io](http://www.javadoc.io) for providing a free javadoc documentation for open source projects|
 |     <img width=1000/>     |

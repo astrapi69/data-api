@@ -13,6 +13,7 @@ CHANGED:
 
 - update gradle to new version 7.0
 - update of com.github.ben-manes.versions.gradle.plugin to new version 0.38.0
+- changed to new package io.github.astrapi69
 
 Version 2
 -------------
