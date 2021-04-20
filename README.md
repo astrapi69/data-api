@@ -80,10 +80,18 @@ Than you can add the dependency to your dependencies:
 			...
 		</dependencies>
 
-	
 ## gradle dependency
 
-Add the following gradle dependency to your project `build.gradle` in the dependencies section if you want to import the core functionality of ent-api:
+Add the following gradle dependency to your project `build.gradle` in the dependencies section if you want to import 
+the core functionality of ent-api:
+
+define version in file gradle.properties
+```
+
+entApiVersion=2
+```
+
+or in build.gradle ext area
 
 ```
 ext {
@@ -91,6 +99,11 @@ ext {
     entApiVersion = "2"
 			...
 }
+```
+
+and than add the dependency to the dependencies area
+
+```
 dependencies {
 			...
 	implementation("de.alpharogroup:ent-api:$entApiVersion")
