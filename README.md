@@ -20,12 +20,12 @@ This api project provides interfaces that data objects(for instance jpa entities
 - versionable objects that holds a version property
 - key value pair objects
 - processable objects
-- tracable objects
+- traceable objects
 - treeable objects
 - validatable objects
 - verifiable objects
 - visibility of objects
-- and combination of the above descipted objects 
+- and composition of the above described objects 
 
 Note: The project holds only interfaces and has no dependencies to other libraries
 
