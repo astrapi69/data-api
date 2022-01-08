@@ -24,8 +24,6 @@
  */
 package io.github.astrapi69.entity.deletable;
 
-import io.github.astrapi69.entity.accomplishable.Accomplishable;
-
 /**
  * The interface {@link ByDeletable} can be implemented from an entity that needs the data of the
  * point of time from its deletion and who deleted
@@ -35,7 +33,7 @@ import io.github.astrapi69.entity.accomplishable.Accomplishable;
  * @param <U>
  *            the generic type of the user or account
  */
-public interface ByDeletable<T, U> extends Deletable<T>, Accomplishable<U>
+public interface ByDeletable<T, U> extends Deletable<T>
 {
 
 	/** The Constant for the column name 'deletedBy'. */

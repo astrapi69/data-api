@@ -4,6 +4,11 @@
 Version 2.2-SNAPSHOT
 -------------
 
+CHANGED:
+
+- removed unused generic PK (for primary key) from interface Treeable 
+- removed unused generic <U> (for the user or account) from interface Accomplishable 
+
 Version 2.1
 -------------
 

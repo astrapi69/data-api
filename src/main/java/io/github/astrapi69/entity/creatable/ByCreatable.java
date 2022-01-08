@@ -24,8 +24,6 @@
  */
 package io.github.astrapi69.entity.creatable;
 
-import io.github.astrapi69.entity.accomplishable.Accomplishable;
-
 /**
  * The interface {@link ByCreatable} can be implemented from an entity that needs the data of the
  * point of time from its creation and who created
@@ -35,7 +33,7 @@ import io.github.astrapi69.entity.accomplishable.Accomplishable;
  * @param <U>
  *            the generic type of the user or account
  */
-public interface ByCreatable<T, U> extends Creatable<T>, Accomplishable<U>
+public interface ByCreatable<T, U> extends Creatable<T>
 {
 
 	/** The Constant for the column name 'createdBy'. */
