@@ -8,6 +8,8 @@
 [![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/ent-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/ent-api)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
+[![Hits Of Code](https://hitsofcode.com/github/astrapi69/ent-api)](https://hitsofcode.com/github/astrapi69/ent-api/view)
+[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/ent-api)](https://github.com/astrapi69/ent-api)
 
 </div>
 
@@ -29,28 +31,35 @@ This api project provides interfaces that data objects(for instance jpa entities
 
 Note: The project holds only interfaces and has no dependencies to other libraries
 
-If you like this project put a ⭐ and donate
+> Please support this project by simply putting a Github <!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/astrapi69/ent-api" data-icon="octicon-star" aria-label="Star astrapi69/ent-api on GitHub">Star ⭐</a>
+>
+> Share this library with friends on Twitter and everywhere else you can
+>
+> If you love this project [![donation](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 
-## Note
+## gradle dependency
 
-No animals were harmed in the making of this library.
+Add the following gradle dependency to your project `build.gradle` in the dependencies section if 
+you want to import the core functionality of ent-api:
 
+define version in file gradle.properties
 
-# Donations
+```
+entApiVersion=2.2
+```
 
-If you like this library, please consider a donation through bitcoin or over bitcoin-cash with:
+or in build.gradle ext area
 
-36JxRRDfRazLNqUV6NsywCw1q7TK38ukpC
+```
+    entApiVersion = "2.2"
+```
 
-or over ether with:
+and than add the dependency to the dependencies area
 
-0x588Aa02De98B1Ef70afeDC3ec5290130a3E5e273
-
-or over donate buttons at the top
-
-## License
-
-The source code comes under the liberal MIT License, making ent-api great for all types of applications.
+```
+	implementation("io.github.astrapi69:ent-api:$entApiVersion")
+```
 
 ## Maven dependency
 
@@ -65,7 +74,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>2.1</ent-api.version>
+		<ent-api.version>2.2</ent-api.version>
 			...
 	</properties>
 			...
@@ -80,36 +89,73 @@ Than you can add the dependency to your dependencies:
 			...
 		</dependencies>
 
-## gradle dependency
+## Note
 
-Add the following gradle dependency to your project `build.gradle` in the dependencies section if you want to import 
-the core functionality of ent-api:
+No animals were harmed in the making of this library.
 
-define version in file gradle.properties
-```
+# Donations
 
-entApiVersion=2.1
-```
+This project is kept as an open source product and relies on contributions to remain being
+developed. If you like this library, please consider a donation
 
-or in build.gradle ext area
+over paypal:
+<br>
+<br>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJ7V43GU2H386" target="_blank">
+<img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
+alt="PayPal this"
+title="PayPal – The safer, easier way to pay online!"
+style="border: none" />
+</a>
+<br>
+<br>
+or over bitcoin(BTC) with this address:
 
-```
-ext {
-			...
-    entApiVersion = "2.1"
-			...
-}
-```
+bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy
 
-and than add the dependency to the dependencies area
+<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy.png"
+alt="Donation Bitcoin Wallet" width="250"/>
 
-```
-dependencies {
-			...
-	implementation("io.github.astrapi69:ent-api:$entApiVersion")
-			...
-}
-```
+or over FIO with this address:
+
+FIO7tFMUVAA9cHiPPqKMfMXiSxHrbpiFyRYqTketNuM67aULuwjop
+
+<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/FIO7tFMUVAA9cHiPPqKMfMXiSxHrbpiFyRYqTketNuM67aULuwjop.png"
+alt="Donation FIO Wallet" width="250"/>
+
+or over Ethereum(ETH) with:
+
+0xc057D159D3C8f3311E73568b334FF6fE82EB2b7D
+
+<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xc057D159D3C8f3311E73568b334FF6fE82EB2b7D.png"
+alt="Donation Ethereum Wallet" width="250"/>
+
+or over Ethereum Classic(ETC) with:
+
+0xF708cA86D86C246B69c3F4BAe431eBbe0c2bfddD
+
+<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xF708cA86D86C246B69c3F4BAe431eBbe0c2bfddD.png"
+alt="Donation Ethereum Classic Wallet" width="250"/>
+
+or over Dogecoin(DOGE) with:
+
+D5yi4Um8cpakd6yPRm2hGWuQ5nrVzhSSW1
+
+<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/D5yi4Um8cpakd6yPRm2hGWuQ5nrVzhSSW1.png"
+alt="Donation Dogecoin Wallet" width="250"/>
+
+or over Monero(XMR) with:
+
+49bqeRQ7Bf49oJFVC72pqpe5hFbb62pfXDYPdLsadGGF81KZW2ZfrPZ8PbAVu5X2v1TYAspeczMya3cYQysNS4usRRPQHVw
+
+<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/49bqeRQ7Bf49oJFVC72pqpe5hFbb62pfXDYPdLsadGGF81KZW2ZfrPZ8PbAVu5X2v1TYAspeczMya3cYQysNS4usRRPQHVw.png"
+alt="Donation Monero Wallet" width="250"/>
+
+or over the donation buttons at the top.
+
+## License
+
+The source code comes under the liberal MIT License, making ent-api great for all types of applications.
 
 ## Semantic Versioning
 
