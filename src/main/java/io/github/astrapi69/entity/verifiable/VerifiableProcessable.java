@@ -27,8 +27,8 @@ package io.github.astrapi69.entity.verifiable;
 import io.github.astrapi69.entity.processable.Processable;
 
 /**
- * The interface {@link VerifiableProcessable} is for entities that have to be signed ,verified
- * and processable. Processable flag is false if the verification failed
+ * The interface {@link VerifiableProcessable} is for entities that have to be signed ,verified and
+ * processable. Processable flag is false if the verification failed
  */
 public interface VerifiableProcessable extends Verifiable, Processable
 {

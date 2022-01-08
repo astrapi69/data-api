@@ -47,19 +47,19 @@ public interface Validatable<T>
 	T getValidFrom();
 
 	/**
-	 * Gets the valid till.
-	 *
-	 * @return the valid till
-	 */
-	T getValidTill();
-
-	/**
 	 * Sets the valid from.
 	 *
 	 * @param validFrom
 	 *            the new valid from
 	 */
 	void setValidFrom(T validFrom);
+
+	/**
+	 * Gets the valid till.
+	 *
+	 * @return the valid till
+	 */
+	T getValidTill();
 
 	/**
 	 * Sets the valid till.

@@ -24,20 +24,16 @@
  */
 package io.github.astrapi69.entity.treeable;
 
-import java.io.Serializable;
-
 /**
  * The interface {@link Treeable} provides the data for keep information with in a tree structure.
  *
- * @param <PK>
- *            the generic type of the technical primary key
  * @param <T>
  *            the generic type of the value from this tree entity
  * @param <TR>
  *            the generic type of the concrete entity that will implement this interface
  */
 @SuppressWarnings("rawtypes")
-public interface Treeable<PK extends Serializable, T, TR extends Treeable>
+public interface Treeable<T, TR extends Treeable>
 {
 
 	/** The Constant for the column name 'depth'. */
@@ -60,27 +56,6 @@ public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 	int getDepth();
 
 	/**
-	 * Gets the parent
-	 *
-	 * @return the parent
-	 */
-	TR getParent();
-
-	/**
-	 * Gets the value.
-	 *
-	 * @return the value
-	 */
-	T getValue();
-
-	/**
-	 * Checks if this is a node
-	 *
-	 * @return true, if it is a node
-	 */
-	boolean isNode();
-
-	/**
 	 * Sets the new depth of the node
 	 *
 	 * @param depth
@@ -89,12 +64,11 @@ public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 	void setDepth(int depth);
 
 	/**
-	 * Sets the node flag
+	 * Gets the parent
 	 *
-	 * @param node
-	 *            the new node flag
+	 * @return the parent
 	 */
-	void setNode(boolean node);
+	TR getParent();
 
 	/**
 	 * Sets the parent
@@ -105,11 +79,33 @@ public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 	void setParent(TR parent);
 
 	/**
+	 * Gets the value.
+	 *
+	 * @return the value
+	 */
+	T getValue();
+
+	/**
 	 * Sets the value
 	 *
 	 * @param value
 	 *            the new value
 	 */
 	void setValue(T value);
+
+	/**
+	 * Checks if this is a node or a leaf
+	 *
+	 * @return true, if it is a node otherwise false if it is a leaf
+	 */
+	boolean isNode();
+
+	/**
+	 * Sets the node flag
+	 *
+	 * @param node
+	 *            the new node flag
+	 */
+	void setNode(boolean node);
 
 }

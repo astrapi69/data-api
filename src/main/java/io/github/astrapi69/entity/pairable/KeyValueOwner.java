@@ -55,20 +55,6 @@ public interface KeyValueOwner<O, K, V>
 	K getKey();
 
 	/**
-	 * Gets the owner.
-	 *
-	 * @return the owner
-	 */
-	O getOwner();
-
-	/**
-	 * Gets the value.
-	 *
-	 * @return the value
-	 */
-	V getValue();
-
-	/**
 	 * Sets the key.
 	 *
 	 * @param key
@@ -77,12 +63,26 @@ public interface KeyValueOwner<O, K, V>
 	void setKey(final K key);
 
 	/**
+	 * Gets the owner.
+	 *
+	 * @return the owner
+	 */
+	O getOwner();
+
+	/**
 	 * Sets the owner.
 	 *
 	 * @param owner
 	 *            the new owner
 	 */
 	void setOwner(final O owner);
+
+	/**
+	 * Gets the value.
+	 *
+	 * @return the value
+	 */
+	V getValue();
 
 	/**
 	 * Sets the value.

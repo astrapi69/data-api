@@ -26,9 +26,9 @@ package io.github.astrapi69.entity.traceable;
 
 import java.io.Serializable;
 
-import io.github.astrapi69.entity.identifiable.Identifiable;
 import io.github.astrapi69.entity.creatable.ByCreatable;
 import io.github.astrapi69.entity.deletable.ByDeletable;
+import io.github.astrapi69.entity.identifiable.Identifiable;
 import io.github.astrapi69.entity.modifiable.ByLastModified;
 import io.github.astrapi69.entity.versionable.Versionable;
 

@@ -31,7 +31,7 @@ package io.github.astrapi69.entity.accomplishable;
  * @param <U>
  *            the generic type of the user or account
  */
-public interface ByAccomplishable<U> extends Accomplishable<U>
+public interface ByAccomplishable<U> extends Accomplishable
 {
 
 	/** The Constant for the column name 'accomplishedBy'. */

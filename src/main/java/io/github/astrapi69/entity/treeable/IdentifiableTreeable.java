@@ -43,6 +43,6 @@ import io.github.astrapi69.entity.identifiable.Identifiable;
 public interface IdentifiableTreeable<PK extends Serializable, T, TR extends IdentifiableTreeable>
 	extends
 		Identifiable<PK>,
-		Treeable<PK, T, TR>
+		Treeable<T, TR>
 {
 }

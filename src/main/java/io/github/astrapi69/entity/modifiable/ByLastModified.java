@@ -24,8 +24,6 @@
  */
 package io.github.astrapi69.entity.modifiable;
 
-import io.github.astrapi69.entity.accomplishable.Accomplishable;
-
 /**
  * The interface {@link ByLastModified} can be implemented from an entity that needs the data of the
  * point of time from its last modification and who last modified
@@ -35,7 +33,7 @@ import io.github.astrapi69.entity.accomplishable.Accomplishable;
  * @param <U>
  *            the generic type of the user or account
  */
-public interface ByLastModified<T, U> extends LastModified<T>, Accomplishable<U>
+public interface ByLastModified<T, U> extends LastModified<T>
 {
 
 	/** The Constant for the column name 'lastModifiedBy'. */

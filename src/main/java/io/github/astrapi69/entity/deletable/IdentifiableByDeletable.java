@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.entity.deletable;
 
-import io.github.astrapi69.entity.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.entity.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableByDeletable} is a combination of the interfaces

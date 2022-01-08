@@ -27,10 +27,7 @@ package io.github.astrapi69.entity.accomplishable;
 /**
  * The interface {@link Accomplishable} can be implemented from an entity that needs the data of who
  * executed or accomplished an operation on an entity
- *
- * @param <U>
- *            the generic type of the user or account
  */
-public interface Accomplishable<U>
+public interface Accomplishable
 {
 }
