@@ -24,8 +24,6 @@
  */
 package io.github.astrapi69.entity.treeable;
 
-import java.io.Serializable;
-
 /**
  * The interface {@link Treeable} provides the data for keep information with in a tree structure.
  *
@@ -58,27 +56,6 @@ public interface Treeable<T, TR extends Treeable>
 	int getDepth();
 
 	/**
-	 * Gets the parent
-	 *
-	 * @return the parent
-	 */
-	TR getParent();
-
-	/**
-	 * Gets the value.
-	 *
-	 * @return the value
-	 */
-	T getValue();
-
-	/**
-	 * Checks if this is a node or a leaf
-	 *
-	 * @return true, if it is a node otherwise false if it is a leaf
-	 */
-	boolean isNode();
-
-	/**
 	 * Sets the new depth of the node
 	 *
 	 * @param depth
@@ -87,12 +64,11 @@ public interface Treeable<T, TR extends Treeable>
 	void setDepth(int depth);
 
 	/**
-	 * Sets the node flag
+	 * Gets the parent
 	 *
-	 * @param node
-	 *            the new node flag
+	 * @return the parent
 	 */
-	void setNode(boolean node);
+	TR getParent();
 
 	/**
 	 * Sets the parent
@@ -103,11 +79,33 @@ public interface Treeable<T, TR extends Treeable>
 	void setParent(TR parent);
 
 	/**
+	 * Gets the value.
+	 *
+	 * @return the value
+	 */
+	T getValue();
+
+	/**
 	 * Sets the value
 	 *
 	 * @param value
 	 *            the new value
 	 */
 	void setValue(T value);
+
+	/**
+	 * Checks if this is a node or a leaf
+	 *
+	 * @return true, if it is a node otherwise false if it is a leaf
+	 */
+	boolean isNode();
+
+	/**
+	 * Sets the node flag
+	 *
+	 * @param node
+	 *            the new node flag
+	 */
+	void setNode(boolean node);
 
 }

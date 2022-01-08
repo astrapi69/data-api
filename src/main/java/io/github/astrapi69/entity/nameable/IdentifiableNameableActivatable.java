@@ -26,8 +26,8 @@ package io.github.astrapi69.entity.nameable;
 
 import java.io.Serializable;
 
-import io.github.astrapi69.entity.identifiable.Identifiable;
 import io.github.astrapi69.entity.activatable.Activatable;
+import io.github.astrapi69.entity.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableNameableActivatable} is a combination of the interfaces

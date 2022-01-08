@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.entity.modifiable;
 
-import io.github.astrapi69.entity.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.entity.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableByLastModified} is a combination of the interfaces

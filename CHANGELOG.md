@@ -4,8 +4,16 @@
 Version 2.2-SNAPSHOT
 -------------
 
+ADDED:
+
+- new gradle-plugin org.ajoberstar.grgit:grgit-gradle in version 4.1.1 for create git tags
+- new gradle options for improve gradle build performance
+
 CHANGED:
 
+- update gradle to new version 7.3.3
+- update of com.github.ben-manes.versions.gradle.plugin to new version 0.41.0
+- update gradle-plugin dependency of gradle.plugin.com.hierynomus.gradle.plugins:license-gradle-plugin to new version 0.16.1
 - removed unused generic PK (for primary key) from interface Treeable 
 - removed unused generic <U> (for the user or account) from interface Accomplishable 
 
