@@ -44,7 +44,7 @@ import io.github.astrapi69.entity.versionable.Versionable;
 public interface IdentifiableTreeableVersionable<PK extends Serializable, T, TR extends IdentifiableTreeableVersionable>
 	extends
 		Identifiable<PK>,
-		Treeable<PK, T, TR>,
+		Treeable<T, TR>,
 		Versionable
 {
 }

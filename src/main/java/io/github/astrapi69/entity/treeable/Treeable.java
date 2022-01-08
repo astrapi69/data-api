@@ -29,15 +29,13 @@ import java.io.Serializable;
 /**
  * The interface {@link Treeable} provides the data for keep information with in a tree structure.
  *
- * @param <PK>
- *            the generic type of the technical primary key
  * @param <T>
  *            the generic type of the value from this tree entity
  * @param <TR>
  *            the generic type of the concrete entity that will implement this interface
  */
 @SuppressWarnings("rawtypes")
-public interface Treeable<PK extends Serializable, T, TR extends Treeable>
+public interface Treeable<T, TR extends Treeable>
 {
 
 	/** The Constant for the column name 'depth'. */
@@ -74,9 +72,9 @@ public interface Treeable<PK extends Serializable, T, TR extends Treeable>
 	T getValue();
 
 	/**
-	 * Checks if this is a node
+	 * Checks if this is a node or a leaf
 	 *
-	 * @return true, if it is a node
+	 * @return true, if it is a node otherwise false if it is a leaf
 	 */
 	boolean isNode();
 
