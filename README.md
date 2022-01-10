@@ -46,13 +46,13 @@ you want to import the core functionality of ent-api:
 define version in file gradle.properties
 
 ```
-entApiVersion=2.2
+entApiVersion=2.3
 ```
 
 or in build.gradle ext area
 
 ```
-    entApiVersion = "2.2"
+    entApiVersion = "2.3"
 ```
 
 and than add the dependency to the dependencies area
@@ -74,7 +74,7 @@ Than you can add the dependency to your dependencies:
 	<properties>
 			...
 		<!-- ENT-API version -->
-		<ent-api.version>2.2</ent-api.version>
+		<ent-api.version>2.3</ent-api.version>
 			...
 	</properties>
 			...
