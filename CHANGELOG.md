@@ -4,7 +4,9 @@
 Version 2.3-SNAPSHOT
 -------------
 
+ADDED:
 
+- a new interface TreeWithChildren that extends the Treeable interface and holds a list with its children
 
 Version 2.2
 -------------
