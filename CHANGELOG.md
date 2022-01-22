@@ -4,7 +4,9 @@
 Version 3.1-SNAPSHOT
 -------------
 
+ADDED:
 
+- generic types to the generic type when extends a generic type in interface Treeable
 
 Version 3
 -------------
