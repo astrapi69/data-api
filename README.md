@@ -2,18 +2,19 @@
 
 <div style="text-align: center">
 
-[![Build Status](https://travis-ci.org/astrapi69/ent-api.svg?branch=master)](https://travis-ci.org/astrapi69/ent-api) 
-[![Open Issues](https://img.shields.io/github/issues/astrapi69/ent-api.svg?style=flat)](https://github.com/astrapi69/ent-api/issues) 
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/ent-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/ent-api)
-[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/ent-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/ent-api)
+[![Build Status](https://travis-ci.org/astrapi69/data-api.svg?branch=master)](https://travis-ci.org/astrapi69/data-api)
+[![Open Issues](https://img.shields.io/github/issues/astrapi69/data-api.svg?style=flat)](https://github.com/astrapi69/data-api/issues)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api)
+[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/data-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/data-api)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
-[![Hits Of Code](https://hitsofcode.com/github/astrapi69/ent-api)](https://hitsofcode.com/github/astrapi69/ent-api/view)
-[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/ent-api)](https://github.com/astrapi69/ent-api)
+[![Hits Of Code](https://hitsofcode.com/github/astrapi69/data-api)](https://hitsofcode.com/github/astrapi69/data-api/view)
+[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/data-api)](https://github.com/astrapi69/data-api)
 
 </div>
 
-This api project provides interfaces that data objects(for instance jpa entities) can implement for providing api features like:
+This api project provides interfaces that data objects(for instance jpa entities) can implement for
+providing api features like:
 
 - identifiable objects
 - provide information for the creation, last modified and deletion
@@ -27,12 +28,12 @@ This api project provides interfaces that data objects(for instance jpa entities
 - validatable objects
 - verifiable objects
 - visibility of objects
-- and composition of the above described objects 
+- and composition of the above described objects
 
 Note: The project holds only interfaces and has no dependencies to other libraries
 
 > Please support this project by simply putting a Github <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/astrapi69/ent-api" data-icon="octicon-star" aria-label="Star astrapi69/ent-api on GitHub">Star ⭐</a>
+<a class="github-button" href="https://github.com/astrapi69/data-api" data-icon="octicon-star" aria-label="Star astrapi69/data-api on GitHub">Star ⭐</a>
 >
 > Share this library with friends on Twitter and everywhere else you can
 >
@@ -40,51 +41,52 @@ Note: The project holds only interfaces and has no dependencies to other librari
 
 ## gradle dependency
 
-Add the following gradle dependency to your project `build.gradle` in the dependencies section if 
-you want to import the core functionality of ent-api:
+Add the following gradle dependency to your project `build.gradle` in the dependencies section if
+you want to import the core functionality of data-api:
 
 define version in file gradle.properties
 
 ```
-entApiVersion=2.3
+dataApiVersion=3
 ```
 
 or in build.gradle ext area
 
 ```
-    entApiVersion = "2.3"
+    dataApiVersion = "3"
 ```
 
 and than add the dependency to the dependencies area
 
 ```
-	implementation("io.github.astrapi69:ent-api:$entApiVersion")
+	implementation("io.github.astrapi69:data-api:$dataApiVersion")
 ```
 
 ## Maven dependency
 
-Maven dependency is now on sonatype.
-Check out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~ent-api~~~) for latest snapshots and releases.
+Maven dependency is now on sonatype. Check
+out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~data-api~~~)
+for latest snapshots and releases.
 
-Add the following maven dependency to your project `pom.xml` if you want to import the core functionality of ent-api:
+Add the following maven dependency to your project `pom.xml` if you want to import the core
+functionality of data-api:
 
 Than you can add the dependency to your dependencies:
 
-
 	<properties>
 			...
-		<!-- ENT-API version -->
-		<ent-api.version>2.3</ent-api.version>
+		<!-- DATA-API version -->
+		<data-api.version>3</data-api.version>
 			...
 	</properties>
 			...
 		<dependencies>
 			...
-			<!-- ENT-API DEPENDENCY -->
+			<!-- DATA-API DEPENDENCY -->
 			<dependency>
 				<groupId>io.github.astrapi69</groupId>
-				<artifactId>ent-api</artifactId>
-				<version>${ent-api.version}</version>
+				<artifactId>data-api</artifactId>
+				<version>${data-api.version}</version>
 			</dependency>
 			...
 		</dependencies>
@@ -113,91 +115,104 @@ or over bitcoin(BTC) with this address:
 
 bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy
 
-<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy.png"
+<img
+src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy.png"
 alt="Donation Bitcoin Wallet" width="250"/>
 
 or over FIO with this address:
 
 FIO7tFMUVAA9cHiPPqKMfMXiSxHrbpiFyRYqTketNuM67aULuwjop
 
-<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/FIO7tFMUVAA9cHiPPqKMfMXiSxHrbpiFyRYqTketNuM67aULuwjop.png"
+<img
+src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/FIO7tFMUVAA9cHiPPqKMfMXiSxHrbpiFyRYqTketNuM67aULuwjop.png"
 alt="Donation FIO Wallet" width="250"/>
 
 or over Ethereum(ETH) with:
 
 0xc057D159D3C8f3311E73568b334FF6fE82EB2b7D
 
-<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xc057D159D3C8f3311E73568b334FF6fE82EB2b7D.png"
+<img
+src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xc057D159D3C8f3311E73568b334FF6fE82EB2b7D.png"
 alt="Donation Ethereum Wallet" width="250"/>
 
 or over Ethereum Classic(ETC) with:
 
 0xF708cA86D86C246B69c3F4BAe431eBbe0c2bfddD
 
-<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xF708cA86D86C246B69c3F4BAe431eBbe0c2bfddD.png"
+<img
+src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xF708cA86D86C246B69c3F4BAe431eBbe0c2bfddD.png"
 alt="Donation Ethereum Classic Wallet" width="250"/>
 
 or over Dogecoin(DOGE) with:
 
 D5yi4Um8cpakd6yPRm2hGWuQ5nrVzhSSW1
 
-<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/D5yi4Um8cpakd6yPRm2hGWuQ5nrVzhSSW1.png"
+<img
+src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/D5yi4Um8cpakd6yPRm2hGWuQ5nrVzhSSW1.png"
 alt="Donation Dogecoin Wallet" width="250"/>
 
 or over Monero(XMR) with:
 
 49bqeRQ7Bf49oJFVC72pqpe5hFbb62pfXDYPdLsadGGF81KZW2ZfrPZ8PbAVu5X2v1TYAspeczMya3cYQysNS4usRRPQHVw
 
-<img src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/49bqeRQ7Bf49oJFVC72pqpe5hFbb62pfXDYPdLsadGGF81KZW2ZfrPZ8PbAVu5X2v1TYAspeczMya3cYQysNS4usRRPQHVw.png"
+<img
+src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/49bqeRQ7Bf49oJFVC72pqpe5hFbb62pfXDYPdLsadGGF81KZW2ZfrPZ8PbAVu5X2v1TYAspeczMya3cYQysNS4usRRPQHVw.png"
 alt="Donation Monero Wallet" width="250"/>
 
 or over the donation buttons at the top.
 
 ## License
 
-The source code comes under the liberal MIT License, making ent-api great for all types of applications.
+The source code comes under the liberal MIT License, making data-api great for all types of
+applications.
 
 ## Semantic Versioning
 
-The versions of ent-api are maintained with the Simplified Semantic Versioning guidelines.
+The versions of data-api are maintained with the Simplified Semantic Versioning guidelines.
 
 Release version numbers will be incremented in the following format:
 
 `<major>.<minor>.<patch>`
 
-For detailed information on versioning for this project you can visit this [wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki/Simplified-Semantic-Versioning).
+For detailed information on versioning for this project you can visit
+this [wiki page](https://github.com/lightblueseas/mvn-parent-projects/wiki/Simplified-Semantic-Versioning)
+.
 
 ## Want to Help and improve it? ###
 
-The source code for ent-api are on GitHub. Please feel free to fork and send pull requests!
+The source code for data-api are on GitHub. Please feel free to fork and send pull requests!
 
-Create your own fork of [astrapi69/ent-api/fork](https://github.com/astrapi69/ent-api/fork)
+Create your own fork of [astrapi69/data-api/fork](https://github.com/astrapi69/data-api/fork)
 
-To share your changes, [submit a pull request](https://github.com/astrapi69/ent-api/pull/new/develop).
+To share your
+changes, [submit a pull request](https://github.com/astrapi69/data-api/pull/new/develop).
 
 Don't forget to add new units tests on your changes.
 
 ## Contacting the Developers
 
-Do not hesitate to contact the ent-api developers with your questions, concerns, comments, bug reports, or feature requests.
-- Feature requests, questions and bug reports can be reported at the [issues page](https://github.com/astrapi69/ent-api/issues).
+Do not hesitate to contact the data-api developers with your questions, concerns, comments, bug
+reports, or feature requests.
+
+- Feature requests, questions and bug reports can be reported at
+  the [issues page](https://github.com/astrapi69/data-api/issues).
 
 ## Credits
 
 |**Travis CI**|
 |     :---:      |
-|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/ent-api?branch=master)|
+|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/data-api?branch=master)|
 |Special thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects|
 |     <img width=1000/>     |
 
 |**Nexus Sonatype repositories**|
 |     :---:      |
-|[![sonatype repository](https://img.shields.io/nexus/r/https/oss.sonatype.org/io.github.astrapi69/ent-api.svg?style=for-the-badge)](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~ent-api~~~)|
+|[![sonatype repository](https://img.shields.io/nexus/r/https/oss.sonatype.org/io.github.astrapi69/data-api.svg?style=for-the-badge)](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~data-api~~~)|
 |Special thanks to [sonatype repository](https://www.sonatype.com) for providing a free maven repository service for open source projects|
 |     <img width=1000/>     |
 
 |**javadoc.io**|
 |     :---:      |
-|[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/ent-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/ent-api)|
+|[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/data-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/data-api)|
 |Special thanks to [javadoc.io](http://www.javadoc.io) for providing a free javadoc documentation for open source projects|
 |     <img width=1000/>     |
