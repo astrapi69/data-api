@@ -1,17 +1,21 @@
 ## Change log
 ----------------------
 
-Version 2.4-SNAPSHOT
+Version 3-SNAPSHOT
 -------------
 
+CHANGED:
 
+- rename repository and project to data-api
+- moved all intefaces to new package 'io.github.astrapi69.data.*'
 
 Version 2.3
 -------------
 
 ADDED:
 
-- a new interface TreeWithChildren that extends the Treeable interface and holds a list with its children
+- a new interface TreeWithChildren that extends the Treeable interface and holds a list with its
+  children
 
 Version 2.2
 -------------
@@ -25,9 +29,10 @@ CHANGED:
 
 - update gradle to new version 7.3.3
 - update of com.github.ben-manes.versions.gradle.plugin to new version 0.41.0
-- update gradle-plugin dependency of gradle.plugin.com.hierynomus.gradle.plugins:license-gradle-plugin to new version 0.16.1
-- removed unused generic PK (for primary key) from interface Treeable 
-- removed unused generic <U> (for the user or account) from interface Accomplishable 
+- update gradle-plugin dependency of gradle.plugin.com.hierynomus.gradle.plugins:
+  license-gradle-plugin to new version 0.16.1
+- removed unused generic PK (for primary key) from interface Treeable
+- removed unused generic <U> (for the user or account) from interface Accomplishable
 
 Version 2.1
 -------------
@@ -84,9 +89,12 @@ CHANGED:
 - removed the field createdBy from the interface Creatable
 - removed the field deletedBy from the interface Deletable
 - removed the field lastModifiedBy from the interface LastModified
-- adapted all interfaces the extended the old Creatable and replaced with the new interface ByCreatable
-- adapted all interfaces the extended the old Deletable and replaced with the new interface ByDeletable
-- adapted all interfaces the extended the old LastModified and replaced with the new interface ByLastModified
+- adapted all interfaces the extended the old Creatable and replaced with the new interface
+  ByCreatable
+- adapted all interfaces the extended the old Deletable and replaced with the new interface
+  ByDeletable
+- adapted all interfaces the extended the old LastModified and replaced with the new interface
+  ByLastModified
 - update of com.github.ben-manes.versions.gradle.plugin to new version 0.29.0
 
 Version 1.8
@@ -94,7 +102,7 @@ Version 1.8
 
 ADDED:
 
-- missing interfaces that make combination of the main interfaces 
+- missing interfaces that make combination of the main interfaces
 
 CHANGED:
 
@@ -130,7 +138,7 @@ Version 1.5
 -------------
 
 ADDED:
- 
+
 - project github files created
 
 CHANGED:
@@ -141,47 +149,47 @@ Version 1.4.1.1
 -------------
 
 ADDED:
- 
+
 - new constants for the prefixes in enum DatabasePrefix
 
 Version 1.4
 -------------
 
 ADDED:
- 
+
 - new enum class DatabasePrefix from ent-core to this project
 
 Version 1.3.1
 -------------
 
 ADDED:
- 
+
 - a new interface Treeable that provides keeping data with in a tree structure
 
 Version 1.2.1
 -------------
 
 ADDED:
- 
+
 - a new configuration uploadArchives in build.gradle for upload maven artifacts to maven repository
 
 Version 1.2
 -------------
 
 ADDED:
- 
+
 - new interfaces for store a variable length of text values
 
 Version 1.1
 -------------
 
 ADDED:
- 
+
 - a new interface for truncate a underlying data source
 
 Version 1
 -------------
 
 ADDED:
- 
+
 - this changelog file
