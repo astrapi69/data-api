@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.nameable;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableNameable} is a combination of the interfaces

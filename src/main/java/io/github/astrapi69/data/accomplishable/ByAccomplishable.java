@@ -25,8 +25,8 @@
 package io.github.astrapi69.data.accomplishable;
 
 /**
- * The interface {@link ByAccomplishable} can be implemented from an data that needs the data of
- * who executed or accomplished an operation on an data with a field accomplishedBy
+ * The interface {@link ByAccomplishable} can be implemented from an data that needs the data of who
+ * executed or accomplished an operation on an data with a field accomplishedBy
  *
  * @param <U>
  *            the generic type of the user or account

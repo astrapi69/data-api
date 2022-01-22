@@ -24,12 +24,12 @@
  */
 package io.github.astrapi69.data.traceable;
 
+import java.io.Serializable;
+
 import io.github.astrapi69.data.creatable.ByCreatable;
 import io.github.astrapi69.data.deletable.ByDeletable;
 import io.github.astrapi69.data.identifiable.Identifiable;
 import io.github.astrapi69.data.modifiable.ByLastModified;
-
-import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableTraceable} is a combination of the interfaces
@@ -41,6 +41,10 @@ import java.io.Serializable;
  *            the generic type of the user or account
  */
 public interface IdentifiableTraceable<PK extends Serializable, T, U>
-	extends Identifiable<PK>, ByCreatable<T, U>, ByLastModified<T, U>, ByDeletable<T, U>
+	extends
+		Identifiable<PK>,
+		ByCreatable<T, U>,
+		ByLastModified<T, U>,
+		ByDeletable<T, U>
 {
 }

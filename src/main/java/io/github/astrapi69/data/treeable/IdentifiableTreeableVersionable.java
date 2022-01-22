@@ -24,10 +24,10 @@
  */
 package io.github.astrapi69.data.treeable;
 
+import java.io.Serializable;
+
 import io.github.astrapi69.data.identifiable.Identifiable;
 import io.github.astrapi69.data.versionable.Versionable;
-
-import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableTreeableVersionable} is a combination of the interfaces * *
@@ -41,6 +41,9 @@ import java.io.Serializable;
  *            the generic type of the concrete data that will implement this interface
  */
 public interface IdentifiableTreeableVersionable<PK extends Serializable, T, TR extends IdentifiableTreeableVersionable<PK, T, TR>>
-	extends Identifiable<PK>, Treeable<T, TR>, Versionable
+	extends
+		Identifiable<PK>,
+		Treeable<T, TR>,
+		Versionable
 {
 }

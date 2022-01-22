@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.modifiable;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableByLastModified} is a combination of the interfaces
@@ -40,6 +40,8 @@ import java.io.Serializable;
  *            the generic type of the user or account
  */
 public interface IdentifiableByLastModified<PK extends Serializable, T, U>
-	extends Identifiable<PK>, ByLastModified<T, U>
+	extends
+		Identifiable<PK>,
+		ByLastModified<T, U>
 {
 }

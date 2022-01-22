@@ -25,8 +25,8 @@
 package io.github.astrapi69.data.deletable;
 
 /**
- * The interface {@link Truncatable} can be implemented from an data that needs to truncate the
- * data of the underlying datasource
+ * The interface {@link Truncatable} can be implemented from an data that needs to truncate the data
+ * of the underlying datasource
  */
 public interface Truncatable
 {

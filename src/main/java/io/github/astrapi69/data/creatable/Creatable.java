@@ -25,8 +25,8 @@
 package io.github.astrapi69.data.creatable;
 
 /**
- * The interface {@link Creatable} can be implemented from an data that needs the data of the
- * point of time from its creation
+ * The interface {@link Creatable} can be implemented from an data that needs the data of the point
+ * of time from its creation
  *
  * @param <T>
  *            the generic type of time measurement

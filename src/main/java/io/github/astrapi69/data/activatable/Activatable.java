@@ -25,8 +25,8 @@
 package io.github.astrapi69.data.activatable;
 
 /**
- * The interface {@link Activatable} can be implemented from an data that needs a trigger to set
- * if the data is active or not.
+ * The interface {@link Activatable} can be implemented from an data that needs a trigger to set if
+ * the data is active or not.
  */
 public interface Activatable
 {

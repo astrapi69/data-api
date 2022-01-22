@@ -25,8 +25,8 @@
 package io.github.astrapi69.data.deletable;
 
 /**
- * The interface {@link Deletable} can be implemented from an data that needs the data of the
- * point of time from its deletion
+ * The interface {@link Deletable} can be implemented from an data that needs the data of the point
+ * of time from its deletion
  *
  * @param <T>
  *            the generic type of time measurement

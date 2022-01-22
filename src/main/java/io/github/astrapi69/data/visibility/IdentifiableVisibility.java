@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.visibility;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableVisibility} is a combination of the interfaces
@@ -36,6 +36,8 @@ import java.io.Serializable;
  *            the generic type of the identifier
  */
 public interface IdentifiableVisibility<PK extends Serializable>
-	extends Identifiable<PK>, Visibility
+	extends
+		Identifiable<PK>,
+		Visibility
 {
 }

@@ -24,10 +24,10 @@
  */
 package io.github.astrapi69.data.validatable.versionable;
 
+import java.io.Serializable;
+
 import io.github.astrapi69.data.validatable.IdentifiableValidatable;
 import io.github.astrapi69.data.versionable.Versionable;
-
-import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableValidatableVersionable} is a combination of the interfaces
@@ -39,6 +39,8 @@ import java.io.Serializable;
  *            the generic type of time measurement
  */
 public interface IdentifiableValidatableVersionable<PK extends Serializable, T>
-	extends IdentifiableValidatable<PK, T>, Versionable
+	extends
+		IdentifiableValidatable<PK, T>,
+		Versionable
 {
 }

@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.creatable;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableByCreatable} is a combination of the interfaces
@@ -40,6 +40,8 @@ import java.io.Serializable;
  *            the generic type of the user or account
  */
 public interface IdentifiableByCreatable<PK extends Serializable, T, U>
-	extends Identifiable<PK>, ByCreatable<T, U>
+	extends
+		Identifiable<PK>,
+		ByCreatable<T, U>
 {
 }

@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.versionable;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableVersionable} is a combination of the interfaces
@@ -36,6 +36,8 @@ import java.io.Serializable;
  *            the generic type of the identifier
  */
 public interface IdentifiableVersionable<PK extends Serializable>
-	extends Identifiable<PK>, Versionable
+	extends
+		Identifiable<PK>,
+		Versionable
 {
 }

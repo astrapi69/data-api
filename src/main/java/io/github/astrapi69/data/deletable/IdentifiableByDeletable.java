@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.deletable;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableByDeletable} is a combination of the interfaces
@@ -40,6 +40,8 @@ import java.io.Serializable;
  *            the generic type of the user or account
  */
 public interface IdentifiableByDeletable<PK extends Serializable, T, U>
-	extends Identifiable<PK>, ByDeletable<T, U>
+	extends
+		Identifiable<PK>,
+		ByDeletable<T, U>
 {
 }

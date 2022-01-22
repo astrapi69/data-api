@@ -24,16 +24,19 @@
  */
 package io.github.astrapi69.data.verifiable;
 
+import java.io.Serializable;
+
 import io.github.astrapi69.data.activatable.Activatable;
 import io.github.astrapi69.data.identifiable.Identifiable;
-
-import java.io.Serializable;
 
 /**
  * The interface {@link IdentifiableVerifiableActivatable} is a combination of the interfaces *
  * {@link Identifiable}, {@link Verifiable} and {@link Activatable}
  */
 public interface IdentifiableVerifiableActivatable<PK extends Serializable>
-	extends Identifiable<PK>, Verifiable, Activatable
+	extends
+		Identifiable<PK>,
+		Verifiable,
+		Activatable
 {
 }

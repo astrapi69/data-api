@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.pairable;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableKeyValueOwner} is a combination of the interfaces
@@ -42,6 +42,8 @@ import java.io.Serializable;
  *            the generic type of the value
  */
 public interface IdentifiableKeyValueOwner<PK extends Serializable, O, K, V>
-	extends Identifiable<PK>, KeyValueOwner<O, K, V>
+	extends
+		Identifiable<PK>,
+		KeyValueOwner<O, K, V>
 {
 }

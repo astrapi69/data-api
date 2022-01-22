@@ -24,9 +24,9 @@
  */
 package io.github.astrapi69.data.deletable;
 
-import io.github.astrapi69.data.identifiable.Identifiable;
-
 import java.io.Serializable;
+
+import io.github.astrapi69.data.identifiable.Identifiable;
 
 /**
  * The interface {@link IdentifiableDeletable} is a combination of the interfaces
@@ -38,6 +38,8 @@ import java.io.Serializable;
  *            the generic type of time measurement
  */
 public interface IdentifiableDeletable<PK extends Serializable, T>
-	extends Identifiable<PK>, Deletable<T>
+	extends
+		Identifiable<PK>,
+		Deletable<T>
 {
 }
