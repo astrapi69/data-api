@@ -40,7 +40,7 @@ import java.io.Serializable;
  * @param <TR>
  *            the generic type of the concrete data that will implement this interface
  */
-@SuppressWarnings("rawtypes") public interface IdentifiableTreeableVersionable<PK extends Serializable, T, TR extends IdentifiableTreeableVersionable>
+public interface IdentifiableTreeableVersionable<PK extends Serializable, T, TR extends IdentifiableTreeableVersionable<PK, T, TR>>
 	extends Identifiable<PK>, Treeable<T, TR>, Versionable
 {
 }

@@ -35,7 +35,7 @@ import java.util.Collection;
  * @param <TR>
  *            the generic type of the concrete data that will implement this interface
  */
-public interface TreeWithChildren<T, TR extends TreeWithChildren> extends Treeable<T, TR>
+public interface TreeWithChildren<T, TR extends TreeWithChildren<T, TR>> extends Treeable<T, TR>
 {
 
 	/**

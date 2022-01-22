@@ -32,7 +32,7 @@ package io.github.astrapi69.data.treeable;
  * @param <TR>
  *            the generic type of the concrete data that will implement this interface
  */
-@SuppressWarnings("rawtypes") public interface Treeable<T, TR extends Treeable>
+public interface Treeable<T, TR extends Treeable<T, TR>>
 {
 
 	/** The Constant for the column name 'depth'. */
