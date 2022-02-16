@@ -7,6 +7,7 @@ Version 3.1-SNAPSHOT
 ADDED:
 
 - generic types to the generic type when extends a generic type in interface Treeable
+- new workflow for github-action with the name 'Java CI with Gradle' for build and test using a Gradle wrapper script
 
 Version 3
 -------------
