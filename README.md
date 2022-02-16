@@ -12,7 +12,7 @@
 
 </div>
 
-This api project provides interfaces that data objects(for instance jpa entities) can implement for
+This api project provides interfaces that data objects(for instance jpa entities or DTO objects) can implement for
 providing api features like:
 
 - identifiable objects
