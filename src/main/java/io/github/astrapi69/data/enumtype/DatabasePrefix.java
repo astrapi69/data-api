@@ -22,7 +22,7 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-package io.github.astrapi69.data.enums;
+package io.github.astrapi69.data.enumtype;
 
 /**
  * The enum {@link DatabasePrefix} holds prefixes for sequences, sequence generators, unique
