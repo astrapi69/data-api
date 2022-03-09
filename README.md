@@ -17,6 +17,7 @@ This api project provides interfaces that data objects(for instance jpa entities
 providing api features like:
 
 - identifiable objects
+- id generation
 - provide information for the creation, last modified and deletion
 - activate or deactivate objects
 - name- or textable objects that holds a name property
