@@ -1,6 +1,22 @@
 ## Change log
 ----------------------
 
+Version 3.1
+-------------
+
+ADDED:
+
+- generic types to the generic type when extends a generic type in interface Treeable
+- new workflow for github-action with the name 'Java CI with Gradle' for build and test using a Gradle wrapper script
+- new gradle-plugin dependency of 'com.diffplug.spotless:spotless-plugin-gradle' in version 6.3.0 for formatting source
+  code
+
+CHANGED:
+
+- update gradle version to 7.4
+- rename of package enums to enumtype
+- update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.42.0
+
 Version 3
 -------------
 
@@ -14,8 +30,7 @@ Version 2.3
 
 ADDED:
 
-- a new interface TreeWithChildren that extends the Treeable interface and holds a list with its
-  children
+- a new interface TreeWithChildren that extends the Treeable interface and holds a list with its children
 
 Version 2.2
 -------------
@@ -89,12 +104,9 @@ CHANGED:
 - removed the field createdBy from the interface Creatable
 - removed the field deletedBy from the interface Deletable
 - removed the field lastModifiedBy from the interface LastModified
-- adapted all interfaces the extended the old Creatable and replaced with the new interface
-  ByCreatable
-- adapted all interfaces the extended the old Deletable and replaced with the new interface
-  ByDeletable
-- adapted all interfaces the extended the old LastModified and replaced with the new interface
-  ByLastModified
+- adapted all interfaces the extended the old Creatable and replaced with the new interface ByCreatable
+- adapted all interfaces the extended the old Deletable and replaced with the new interface ByDeletable
+- adapted all interfaces the extended the old LastModified and replaced with the new interface ByLastModified
 - update of com.github.ben-manes.versions.gradle.plugin to new version 0.29.0
 
 Version 1.8

@@ -2,7 +2,7 @@
 
 <div style="text-align: center">
 
-[![Build Status](https://travis-ci.org/astrapi69/data-api.svg?branch=master)](https://travis-ci.org/astrapi69/data-api)
+[![Java CI with Gradle](https://github.com/astrapi69/data-api/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/data-api/actions/workflows/gradle.yml)
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/data-api.svg?style=flat)](https://github.com/astrapi69/data-api/issues)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api)
 [![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/data-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/data-api)
@@ -13,7 +13,7 @@
 
 </div>
 
-This api project provides interfaces that data objects(for instance jpa entities) can implement for
+This api project provides interfaces that data objects(for instance jpa entities or DTO objects) can implement for
 providing api features like:
 
 - identifiable objects
@@ -41,25 +41,25 @@ Note: The project holds only interfaces and has no dependencies to other librari
 
 ## gradle dependency
 
-Add the following gradle dependency to your project `build.gradle` in the dependencies section if
-you want to import the core functionality of data-api:
+Add the following gradle dependency to your project `build.gradle` in the dependencies section if you want to import the
+core functionality of data-api:
 
 define version in file gradle.properties
 
 ```
-dataApiVersion=3
+dataApiVersion=3.1
 ```
 
 or in build.gradle ext area
 
 ```
-    dataApiVersion = "3"
+    dataApiVersion = "3.1"
 ```
 
 and than add the dependency to the dependencies area
 
 ```
-	implementation("io.github.astrapi69:data-api:$dataApiVersion")
+    implementation("io.github.astrapi69:data-api:$dataApiVersion")
 ```
 
 ## Maven dependency
@@ -68,28 +68,27 @@ Maven dependency is now on sonatype. Check
 out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~data-api~~~)
 for latest snapshots and releases.
 
-Add the following maven dependency to your project `pom.xml` if you want to import the core
-functionality of data-api:
+Add the following maven dependency to your project `pom.xml` if you want to import the core functionality of data-api:
 
 Than you can add the dependency to your dependencies:
 
-	<properties>
-			...
-		<!-- DATA-API version -->
-		<data-api.version>3</data-api.version>
-			...
-	</properties>
-			...
-		<dependencies>
-			...
-			<!-- DATA-API DEPENDENCY -->
-			<dependency>
-				<groupId>io.github.astrapi69</groupId>
-				<artifactId>data-api</artifactId>
-				<version>${data-api.version}</version>
-			</dependency>
-			...
-		</dependencies>
+    <properties>
+            ...
+        <!-- DATA-API version -->
+        <data-api.version>3.1</data-api.version>
+            ...
+    </properties>
+            ...
+        <dependencies>
+            ...
+            <!-- DATA-API DEPENDENCY -->
+            <dependency>
+                <groupId>io.github.astrapi69</groupId>
+                <artifactId>data-api</artifactId>
+                <version>${data-api.version}</version>
+            </dependency>
+            ...
+        </dependencies>
 
 ## Note
 
@@ -97,8 +96,8 @@ No animals were harmed in the making of this library.
 
 # Donations
 
-This project is kept as an open source product and relies on contributions to remain being
-developed. If you like this library, please consider a donation
+This project is kept as an open source product and relies on contributions to remain being developed. If you like this
+library, please consider a donation
 
 over paypal:
 <br>
@@ -163,8 +162,7 @@ or over the donation buttons at the top.
 
 ## License
 
-The source code comes under the liberal MIT License, making data-api great for all types of
-applications.
+The source code comes under the liberal MIT License, making data-api great for all types of applications.
 
 ## Semantic Versioning
 
@@ -184,26 +182,19 @@ The source code for data-api are on GitHub. Please feel free to fork and send pu
 
 Create your own fork of [astrapi69/data-api/fork](https://github.com/astrapi69/data-api/fork)
 
-To share your
-changes, [submit a pull request](https://github.com/astrapi69/data-api/pull/new/develop).
+To share your changes, [submit a pull request](https://github.com/astrapi69/data-api/pull/new/develop).
 
 Don't forget to add new units tests on your changes.
 
 ## Contacting the Developers
 
-Do not hesitate to contact the data-api developers with your questions, concerns, comments, bug
-reports, or feature requests.
+Do not hesitate to contact the data-api developers with your questions, concerns, comments, bug reports, or feature
+requests.
 
 - Feature requests, questions and bug reports can be reported at
   the [issues page](https://github.com/astrapi69/data-api/issues).
 
 ## Credits
-
-|**Travis CI**|
-|     :---:      |
-|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/data-api?branch=master)|
-|Special thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects|
-|     <img width=1000/>     |
 
 |**Nexus Sonatype repositories**|
 |     :---:      |
