@@ -4,7 +4,9 @@
 Version 3.2-SNAPSHOT
 -------------
 
+ADDED:
 
+- new interface IdGenerator for get the next id
 
 Version 3.1
 -------------
