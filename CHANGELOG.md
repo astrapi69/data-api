@@ -4,7 +4,9 @@
 Version 3.3-SNAPSHOT
 -------------
 
+ADDED:
 
+- generic type parameter for the id in the interface IdGenerator
 
 Version 3.2
 -------------
