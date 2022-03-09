@@ -17,6 +17,7 @@ This api project provides interfaces that data objects(for instance jpa entities
 providing api features like:
 
 - identifiable objects
+- id generation
 - provide information for the creation, last modified and deletion
 - activate or deactivate objects
 - name- or textable objects that holds a name property
@@ -47,13 +48,13 @@ core functionality of data-api:
 define version in file gradle.properties
 
 ```
-dataApiVersion=3.1
+dataApiVersion=3.2
 ```
 
 or in build.gradle ext area
 
 ```
-    dataApiVersion = "3.1"
+    dataApiVersion = "3.2"
 ```
 
 and than add the dependency to the dependencies area
@@ -75,7 +76,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- DATA-API version -->
-        <data-api.version>3.1</data-api.version>
+        <data-api.version>3.2</data-api.version>
             ...
     </properties>
             ...

@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 3.2
+-------------
+
+ADDED:
+
+- new interface IdGenerator for get the next id
+
 Version 3.1
 -------------
 
