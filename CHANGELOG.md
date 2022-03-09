@@ -1,6 +1,13 @@
 ## Change log
 ----------------------
 
+Version 3.2.1
+-------------
+
+ADDED:
+
+- generic type parameter for the id in the interface IdGenerator
+
 Version 3.2
 -------------
 
