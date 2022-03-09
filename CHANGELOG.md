@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 3.2-SNAPSHOT
+Version 3.2
 -------------
 
 ADDED:
