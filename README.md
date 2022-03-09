@@ -9,6 +9,7 @@
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 [![Hits Of Code](https://hitsofcode.com/github/astrapi69/data-api)](https://hitsofcode.com/github/astrapi69/data-api/view)
+[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/data-api)](https://github.com/astrapi69/data-api)
 
 </div>
 
@@ -46,13 +47,13 @@ core functionality of data-api:
 define version in file gradle.properties
 
 ```
-dataApiVersion=3
+dataApiVersion=3.1
 ```
 
 or in build.gradle ext area
 
 ```
-    dataApiVersion = "3"
+    dataApiVersion = "3.1"
 ```
 
 and than add the dependency to the dependencies area
@@ -74,7 +75,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- DATA-API version -->
-        <data-api.version>3</data-api.version>
+        <data-api.version>3.1</data-api.version>
             ...
     </properties>
             ...
@@ -194,12 +195,6 @@ requests.
   the [issues page](https://github.com/astrapi69/data-api/issues).
 
 ## Credits
-
-|**Travis CI**|
-|     :---:      |
-|[![Travis CI](https://travis-ci.com/images/logos/TravisCI-Full-Color.png)](https://coveralls.io/github/astrapi69/data-api?branch=master)|
-|Special thanks to [Travis CI](https://travis-ci.org) for providing a free continuous integration service for open source projects|
-|     <img width=1000/>     |
 
 |**Nexus Sonatype repositories**|
 |     :---:      |
