@@ -25,7 +25,7 @@
 package io.github.astrapi69.data.identifiable;
 
 /**
- * The interface {@link IdGenerator} provides a method for get the next generic id object
+ * The interface {@link IdGenerator} provides a method for get the next and the current id object
  *
  * @param <T>
  *            the generic type of the id
@@ -39,5 +39,12 @@ public interface IdGenerator<T>
 	 * @return the next id
 	 */
 	T getNextId();
+
+	/**
+	 * Gets the current id
+	 *
+	 * @return the current id
+	 */
+	T getCurrentId();
 
 }

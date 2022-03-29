@@ -4,7 +4,9 @@
 Version 3.3-SNAPSHOT
 -------------
 
+ADDED:
 
+- new method getCurrentId to the interface IdGenerator
 
 Version 3.2.1
 -------------
