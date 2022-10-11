@@ -1,6 +1,21 @@
 ## Change log
 ----------------------
 
+Version 4
+-------------
+
+ADDED:
+
+- new method getCurrentId to the interface IdGenerator
+- new module-info.java file for module information
+
+CHANGED:
+
+- update jdk version to 11
+- update gradle version to 7.5.1
+- update of gradle-plugin dependency spotless-plugin-gradle to new minor version 6.11.0
+- update of gradle-plugin dependency grgit-gradle to new minor version 5.0.0
+
 Version 3.2.1
 -------------
 
