@@ -5,6 +5,12 @@ Version 4.1-SNAPSHOT
 -------------
 
 
+CHANGED:
+
+- update gradle version to 8.0-rc-1
+- update of gradle-plugin dependency spotless-plugin-gradle to new minor version 6.12.0
+- update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.44.0
+- moved enum classes DatabasePrefix and VerificationState to a more appropriate package name 'enumeration'
 
 Version 4
 -------------

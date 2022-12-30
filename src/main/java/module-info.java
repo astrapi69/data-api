@@ -41,4 +41,5 @@ module data.api {
 	exports io.github.astrapi69.data.verifiable;
 	exports io.github.astrapi69.data.versionable;
 	exports io.github.astrapi69.data.visibility;
+	exports io.github.astrapi69.data.enumeration;
 }
