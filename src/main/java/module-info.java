@@ -22,13 +22,14 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  * WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
-module data.api {
+module data.api
+{
 	exports io.github.astrapi69.data.accomplishable;
 	exports io.github.astrapi69.data.activatable;
 	exports io.github.astrapi69.data.auditable;
 	exports io.github.astrapi69.data.creatable;
 	exports io.github.astrapi69.data.deletable;
-	exports io.github.astrapi69.data.enumtype;
+	exports io.github.astrapi69.data.enumeration;
 	exports io.github.astrapi69.data.identifiable;
 	exports io.github.astrapi69.data.modifiable;
 	exports io.github.astrapi69.data.nameable;
@@ -41,5 +42,4 @@ module data.api {
 	exports io.github.astrapi69.data.verifiable;
 	exports io.github.astrapi69.data.versionable;
 	exports io.github.astrapi69.data.visibility;
-	exports io.github.astrapi69.data.enumeration;
 }
