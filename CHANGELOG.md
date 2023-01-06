@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 4.1-SNAPSHOT
+Version 4.1
 -------------
 
 ADDED:
@@ -11,7 +11,7 @@ ADDED:
 
 CHANGED:
 
-- update gradle version to 8.0-rc-1
+- update gradle version to 7.6
 - update of gradle-plugin dependency spotless-plugin-gradle to new minor version 6.12.1
 - update eclipse version to 4.21.0 for spotless formatting.gradle
 - update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.44.0
