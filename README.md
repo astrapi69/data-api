@@ -48,16 +48,16 @@ core functionality of data-api:
 define version in file gradle.properties
 
 ```
-dataApiVersion=4
+dataApiVersion=4.1
 ```
 
 or in build.gradle ext area
 
 ```
-    dataApiVersion = "4"
+    dataApiVersion = "4.1"
 ```
 
-and than add the dependency to the dependencies area
+and then add the dependency to the dependencies area
 
 ```
     implementation("io.github.astrapi69:data-api:$dataApiVersion")
@@ -76,7 +76,7 @@ Than you can add the dependency to your dependencies:
     <properties>
             ...
         <!-- DATA-API version -->
-        <data-api.version>4</data-api.version>
+        <data-api.version>4.1</data-api.version>
             ...
     </properties>
             ...

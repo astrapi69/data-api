@@ -1,6 +1,23 @@
 ## Change log
 ----------------------
 
+Version 4.1
+-------------
+
+ADDED:
+
+- new interface GenericIdentifiable created that provides an id without the restriction that the key is of type Serializable
+- new spotless file 'importorder.properties' that defines the import order in java files
+
+CHANGED:
+
+- update gradle version to 7.6
+- update of gradle-plugin dependency spotless-plugin-gradle to new minor version 6.12.1
+- update eclipse version to 4.21.0 for spotless formatting.gradle
+- update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.44.0
+- moved enum classes DatabasePrefix and VerificationState to a more appropriate package name 'enumeration'
+- interface Identifiable extends now from interface GenericIdentifiable
+
 Version 4
 -------------
 
