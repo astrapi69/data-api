@@ -24,19 +24,29 @@
  */
 package io.github.astrapi69.data.identifiable;
 
-import java.io.Serializable;
-
 /**
- * The interface {@link Identifiable} can be implemented from a data class that have to be
- * identifiable and the type of the key is {@link Serializable}
+ * The interface {@link GenericIdentifiable} can be implemented from a data class that have to be
+ * identifiable as the name already says
  *
- * @param <PK>
+ * @param <K>
  *            the generic type of the identifier
  */
-public interface Identifiable<PK extends Serializable> extends GenericIdentifiable<PK>
+public interface GenericIdentifiable<K>
 {
 
-	/** The Constant for the column name 'id'. */
-	String COLUMN_NAME_ID = "id";
+	/**
+	 * Gets the id.
+	 *
+	 * @return the id
+	 */
+	K getId();
+
+	/**
+	 * Sets the id.
+	 *
+	 * @param id
+	 *            the new id
+	 */
+	void setId(final K id);
 
 }
