@@ -18,7 +18,7 @@ providing api features like:
 
 - identifiable objects
 - id generation
-- provide information for the creation, last modified and deletion
+- provide information for the creation, last modification and deletion
 - activate or deactivate objects
 - name- or textable objects that holds a name property
 - versionable objects that holds a version property
