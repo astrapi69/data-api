@@ -1,7 +1,7 @@
 ## Change log
 ----------------------
 
-Version 4.2-SNAPSHOT
+Version 5-SNAPSHOT
 -------------
 
 ADDED:
@@ -10,6 +10,7 @@ ADDED:
 
 CHANGED:
 
+- update jdk version to 17
 - update gradle version to 8.8
 - update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.51.0
 - update of gradle-plugin dependency grgit-gradle to new minor version 5.2.2
