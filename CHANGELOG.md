@@ -4,12 +4,16 @@
 Version 4.2-SNAPSHOT
 -------------
 
+ADDED:
+
+- new libs.versions.toml file for new automatic catalog versions update
+
 CHANGED:
 
-- update gradle version to 8.5
-- update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.50.0
-- update of gradle-plugin dependency grgit-gradle to new minor version 5.2.1
-- update of gradle-plugin dependency spotless-plugin-gradle to new minor version 6.23.3
+- update gradle version to 8.8
+- update of gradle-plugin dependency com.github.ben-manes.versions.gradle.plugin to new version 0.51.0
+- update of gradle-plugin dependency grgit-gradle to new minor version 5.2.2
+- update of gradle-plugin dependency spotless-plugin-gradle to new minor version 7.0.0.BETA1
 - update eclipse version to 4.21 for spotless formatting.gradle
 
 Version 4.1
