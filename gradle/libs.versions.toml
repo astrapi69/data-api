@@ -1,11 +1,11 @@
 [versions]
 gradle-plugin-grgit-version = "5.2.2"
 gradle-plugin-license-version = "0.16.1"
-gradle-plugin-spotless-version = "7.0.0.BETA1"
+gradle-plugin-spotless-version = "7.0.0.BETA2"
 gradle-plugin-version-catalog-update-version = "0.8.4"
 gradle-plugin-versions-version = "0.51.0"
-junit-jupiter-version = "5.11.0-M2"
-junit-platform-launcher-version = "1.11.0-M2"
+junit-jupiter-version = "5.11.0"
+junit-platform-launcher-version = "1.11.0"
 meanbean-version = "3.0.0-M9"
 
 [libraries]

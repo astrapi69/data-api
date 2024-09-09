@@ -7,14 +7,14 @@ buildscript {
 }
 
 plugins {
+    id 'jacoco'
     id 'java'
     id 'java-library'
     id 'maven-publish'
     id 'signing'
-    id 'jacoco'
     alias(libs.plugins.gradle.versions.plugin)
-    alias(libs.plugins.license.gradle.plugin)
     alias(libs.plugins.grgit.gradle)
+    alias(libs.plugins.license.gradle.plugin)
     alias(libs.plugins.spotless.plugin.gradle)
     alias(libs.plugins.version.catalog.update)
 }
@@ -24,20 +24,17 @@ version = "$projectVersion" as Object
 description = "$rootProject.name"
 
 // import gradle files
-apply from: "gradle/dependencies.gradle"
-apply from: "gradle/formatting.gradle"
-apply from: "gradle/grgit.gradle"
-apply from: "gradle/licensing.gradle"
-apply from: "gradle/packaging.gradle"
-apply from: "gradle/publishing.gradle"
-apply from: "gradle/repositories.gradle"
-apply from: "gradle/version-catalog-update.gradle"
+apply from: "gradle/apply-gradle-files.gradle"
 
 java {
     sourceCompatibility = "$projectSourceCompatibility" as Object
     toolchain {
         languageVersion = JavaLanguageVersion.of("$projectSourceCompatibility")
     }
+}
+
+tasks.named("test") {
+    it.mustRunAfter(tasks.named("jar"))
 }
 
 tasks.withType(JavaCompile).configureEach { javaCompiler ->
@@ -47,8 +44,3 @@ tasks.withType(JavaCompile).configureEach { javaCompiler ->
     // uncomment the next line for build with compiler argument -Xlint:unchecked
     // options.compilerArgs << "-Xlint:unchecked"
 }
-
-tasks.named("test") {
-    it.mustRunAfter(tasks.named("jar"))
-}
-
