@@ -1,19 +1,23 @@
 [versions]
-gradle-plugin-grgit-version = "5.2.2"
+gradle-plugin-grgit-version = "5.3.0"
 gradle-plugin-license-version = "0.16.1"
-gradle-plugin-spotless-version = "7.0.0.BETA2"
-gradle-plugin-version-catalog-update-version = "0.8.4"
+gradle-plugin-spotless-version = "7.0.0.BETA4"
+gradle-plugin-version-catalog-update-version = "0.8.5"
 gradle-plugin-versions-version = "0.51.0"
-junit-jupiter-version = "5.11.0"
-junit-platform-launcher-version = "1.11.0"
+junit-jupiter-version = "5.11.3"
 meanbean-version = "3.0.0-M9"
 
 [libraries]
 junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junit-jupiter-version" }
-junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher", version.ref = "junit-platform-launcher-version" }
+junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
 meanbean = { module = "com.github.meanbeanlib:meanbean", version.ref = "meanbean-version" }
 
 [bundles]
+# Dependencies required only at test runtime, such as test execution platforms
+test-runtime-only = [
+    "junit-platform-launcher",
+]
+# Dependencies required for unit testing
 unit-testing = [
     "junit-jupiter",
     "meanbean",
