@@ -1,0 +1,3 @@
+# The JDK this repository builds with: the one its CI resolves (setup-java 'temurin' '17' resolved
+# 17.0.20+8). `sdk env` sets the shell to it, and the pre-commit hook runs Gradle on it (#3).
+java=17.0.20-tem
