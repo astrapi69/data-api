@@ -73,7 +73,6 @@
 ################
 /build
 /.gradle
-/gradle
 /out
 # Ignore Gradle GUI config
 gradle-app.setting
