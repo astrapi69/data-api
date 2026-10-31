@@ -4,12 +4,11 @@
 
 [![Java CI with Gradle](https://github.com/astrapi69/data-api/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/data-api/actions/workflows/gradle.yml)
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/data-api.svg?style=flat)](https://github.com/astrapi69/data-api/issues)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/data-api)](https://central.sonatype.com/artifact/io.github.astrapi69/data-api)
 [![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/data-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/data-api)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 [![Hits Of Code](https://hitsofcode.com/github/astrapi69/data-api)](https://hitsofcode.com/github/astrapi69/data-api/view)
-[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/data-api)](https://github.com/astrapi69/data-api)
 
 </div>
 
@@ -48,7 +47,7 @@ Note: The project holds only interfaces and has no dependencies to other librari
 ## gradle dependency
 
 Replace the variable ${latestVersion} with the current latest
-version: [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api)
+version: [![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/data-api)](https://central.sonatype.com/artifact/io.github.astrapi69/data-api)
 
 You can first define the version in the ext section and add than the following gradle dependency to
 your project `build.gradle` if you want to import the core functionality of data-api:
@@ -96,10 +95,7 @@ then add the dependency to the dependencies area
 
 ## Maven dependency
 
-Maven dependency is now on sonatype.
-Check
-out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~data-api~~~)
-for latest snapshots and releases.
+The library is on Maven Central. Check out [Maven Central](https://central.sonatype.com/artifact/io.github.astrapi69/data-api) for the latest release.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core
 functionality of data-api:
@@ -140,8 +136,6 @@ Then you can add the dependency to your dependencies:
 
 ## 📸 Snapshots
 
-[![Snapshot](https://img.shields.io/badge/dynamic/xml?url=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/github/astrapi69/data-api/maven-metadata.xml&label=snapshot&color=red&query=.//versioning/latest)](https://oss.sonatype.org/content/repositories/snapshots/io/github/astrapi69/data-api/)
-
 This section describes how to import snapshot versions into your project.
 Add the following code snippet to your gradle file in the repositories section:
 
@@ -152,8 +146,8 @@ repositories {
 
 ```groovy
     maven {
-    name "Sonatype Nexus Snapshots"
-    url "https://oss.sonatype.org/content/repositories/snapshots"
+    name "Central Portal Snapshots"
+    url "https://central.sonatype.com/repository/maven-snapshots/"
     mavenContent {
         snapshotsOnly()
     }
@@ -213,9 +207,9 @@ requests.
 
 ## Credits
 
-|**Nexus Sonatype repositories**|
+|**Maven Central**|
 |     :---:      |
-|[![sonatype repository](https://img.shields.io/nexus/r/https/oss.sonatype.org/io.github.astrapi69/data-api.svg?style=for-the-badge)](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~data-api~~~)|
+|[![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/data-api?style=for-the-badge)](https://central.sonatype.com/artifact/io.github.astrapi69/data-api)|
 |Special thanks to [sonatype repository](https://www.sonatype.com) for providing a free maven repository service for open source projects|
 |     <img width=1000/>     |
 
