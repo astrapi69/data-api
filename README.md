@@ -4,12 +4,11 @@
 
 [![Java CI with Gradle](https://github.com/astrapi69/data-api/actions/workflows/gradle.yml/badge.svg)](https://github.com/astrapi69/data-api/actions/workflows/gradle.yml)
 [![Open Issues](https://img.shields.io/github/issues/astrapi69/data-api.svg?style=flat)](https://github.com/astrapi69/data-api/issues)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/data-api)](https://central.sonatype.com/artifact/io.github.astrapi69/data-api)
 [![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/data-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/data-api)
 [![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](http://opensource.org/licenses/MIT)
 [![Donate](https://img.shields.io/badge/donate-❤-ff2244.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GVBTWLRAZ7HB8)
 [![Hits Of Code](https://hitsofcode.com/github/astrapi69/data-api)](https://hitsofcode.com/github/astrapi69/data-api/view)
-[![Lines Of Code](https://tokei.rs/b1/github/astrapi69/data-api)](https://github.com/astrapi69/data-api)
 
 </div>
 
@@ -48,7 +47,7 @@ Note: The project holds only interfaces and has no dependencies to other librari
 ## gradle dependency
 
 Replace the variable ${latestVersion} with the current latest
-version: [![Maven Central](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api/badge.svg)](https://maven-badges.herokuapp.com/maven-central/io.github.astrapi69/data-api)
+version: [![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/data-api)](https://central.sonatype.com/artifact/io.github.astrapi69/data-api)
 
 You can first define the version in the ext section and add than the following gradle dependency to
 your project `build.gradle` if you want to import the core functionality of data-api:
@@ -96,10 +95,7 @@ then add the dependency to the dependencies area
 
 ## Maven dependency
 
-Maven dependency is now on sonatype.
-Check
-out [sonatype repository](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~data-api~~~)
-for latest snapshots and releases.
+The library is on Maven Central. Check out [Maven Central](https://central.sonatype.com/artifact/io.github.astrapi69/data-api) for the latest release.
 
 Add the following maven dependency to your project `pom.xml` if you want to import the core
 functionality of data-api:
@@ -140,8 +136,6 @@ Then you can add the dependency to your dependencies:
 
 ## 📸 Snapshots
 
-[![Snapshot](https://img.shields.io/badge/dynamic/xml?url=https://oss.sonatype.org/service/local/repositories/snapshots/content/io/github/astrapi69/data-api/maven-metadata.xml&label=snapshot&color=red&query=.//versioning/latest)](https://oss.sonatype.org/content/repositories/snapshots/io/github/astrapi69/data-api/)
-
 This section describes how to import snapshot versions into your project.
 Add the following code snippet to your gradle file in the repositories section:
 
@@ -152,8 +146,8 @@ repositories {
 
 ```groovy
     maven {
-    name "Sonatype Nexus Snapshots"
-    url "https://oss.sonatype.org/content/repositories/snapshots"
+    name "Central Portal Snapshots"
+    url "https://central.sonatype.com/repository/maven-snapshots/"
     mavenContent {
         snapshotsOnly()
     }
@@ -169,71 +163,13 @@ repositories {
 
 No animals were harmed in the making of this library.
 
-# Donations
+## Support this project
 
-This project is kept as an open source product and relies on contributions to remain being developed. If you like this
-library, please consider a donation
+If data-api is useful to you, a star on [GitHub](https://github.com/astrapi69/data-api) helps others find it.
+Sharing it or reporting a bug helps just as much.
 
-over paypal:
-<br>
-<br>
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=MJ7V43GU2H386" target="_blank">
-<img src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif"
-alt="PayPal this"
-title="PayPal – The safer, easier way to pay online!"
-style="border: none" />
-</a>
-<br>
-<br>
-or over bitcoin(BTC) with this address:
-
-bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy
-
-<img
-src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/bc1ql2y99q7e8psndhcc3gferk03esw3qqf677rhjy.png"
-alt="Donation Bitcoin Wallet" width="250"/>
-
-or over FIO with this address:
-
-FIO7tFMUVAA9cHiPPqKMfMXiSxHrbpiFyRYqTketNuM67aULuwjop
-
-<img
-src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/FIO7tFMUVAA9cHiPPqKMfMXiSxHrbpiFyRYqTketNuM67aULuwjop.png"
-alt="Donation FIO Wallet" width="250"/>
-
-or over Ethereum(ETH) with:
-
-0xc057D159D3C8f3311E73568b334FF6fE82EB2b7D
-
-<img
-src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xc057D159D3C8f3311E73568b334FF6fE82EB2b7D.png"
-alt="Donation Ethereum Wallet" width="250"/>
-
-or over Ethereum Classic(ETC) with:
-
-0xF708cA86D86C246B69c3F4BAe431eBbe0c2bfddD
-
-<img
-src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/0xF708cA86D86C246B69c3F4BAe431eBbe0c2bfddD.png"
-alt="Donation Ethereum Classic Wallet" width="250"/>
-
-or over Dogecoin(DOGE) with:
-
-D5yi4Um8cpakd6yPRm2hGWuQ5nrVzhSSW1
-
-<img
-src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/D5yi4Um8cpakd6yPRm2hGWuQ5nrVzhSSW1.png"
-alt="Donation Dogecoin Wallet" width="250"/>
-
-or over Monero(XMR) with:
-
-49bqeRQ7Bf49oJFVC72pqpe5hFbb62pfXDYPdLsadGGF81KZW2ZfrPZ8PbAVu5X2v1TYAspeczMya3cYQysNS4usRRPQHVw
-
-<img
-src="https://github.com/astrapi69/jgeohash/blob/master/src/main/resources/img/49bqeRQ7Bf49oJFVC72pqpe5hFbb62pfXDYPdLsadGGF81KZW2ZfrPZ8PbAVu5X2v1TYAspeczMya3cYQysNS4usRRPQHVw.png"
-alt="Donation Monero Wallet" width="250"/>
-
-or over the donation buttons at the top.
+If you would like to contribute financially, the channels are on the repository's Sponsor button, which
+reads [.github/FUNDING.yml](.github/FUNDING.yml): GitHub Sponsors, Liberapay, Ko-fi and PayPal.
 
 ## License
 
@@ -271,9 +207,9 @@ requests.
 
 ## Credits
 
-|**Nexus Sonatype repositories**|
+|**Maven Central**|
 |     :---:      |
-|[![sonatype repository](https://img.shields.io/nexus/r/https/oss.sonatype.org/io.github.astrapi69/data-api.svg?style=for-the-badge)](https://oss.sonatype.org/index.html#nexus-search;gav~io.github.astrapi69~data-api~~~)|
+|[![Maven Central](https://img.shields.io/maven-central/v/io.github.astrapi69/data-api?style=for-the-badge)](https://central.sonatype.com/artifact/io.github.astrapi69/data-api)|
 |Special thanks to [sonatype repository](https://www.sonatype.com) for providing a free maven repository service for open source projects|
 |     <img width=1000/>     |
 
@@ -282,3 +218,12 @@ requests.
 |[![Javadocs](http://www.javadoc.io/badge/io.github.astrapi69/data-api.svg)](http://www.javadoc.io/doc/io.github.astrapi69/data-api)|
 |Special thanks to [javadoc.io](http://www.javadoc.io) for providing a free javadoc documentation for open source projects|
 |     <img width=1000/>     |
+
+## Git hooks
+
+The repository's git hooks live in `.githooks`: `commit-msg` where present, and `pre-commit`, which refuses a
+commit whose files Spotless would format. Activate them once per clone or worktree:
+
+```bash
+git config core.hooksPath .githooks
+```
