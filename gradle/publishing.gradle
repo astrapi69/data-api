@@ -78,8 +78,16 @@ signing {
     if (releaseVersion) {
         def signingKey = System.getenv("GPG_PRIVATE_KEY")
         def signingPassphrase = System.getenv("GPG_PASSPHRASE")
+        // the 8 hex digits of the signing subkey: with it Gradle signs with the subkey, which is
+        // what a subkey-only export carries; without it Gradle takes the primary key, which such
+        // an export holds only as a stub (astrapi69/lethenon docs/launch/release-key.md, RL-090)
+        def signingKeyId = System.getenv("GPG_KEY_ID")
         if (signingKey && signingPassphrase) {
-            useInMemoryPgpKeys(signingKey, signingPassphrase)
+            if (signingKeyId) {
+                useInMemoryPgpKeys(signingKeyId, signingKey, signingPassphrase)
+            } else {
+                useInMemoryPgpKeys(signingKey, signingPassphrase)
+            }
         }
         else if (!project.hasProperty("signing.keyId")) {
             // fall back to the local gpg command with the key from signing.gnupg.keyName
